@@ -16,6 +16,7 @@
 		533D91472BBF7631004C5E2E /* CocoaTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D91462BBF7631004C5E2E /* CocoaTouchTests.swift */; };
 		533D91512BBF7631004C5E2E /* CocoaTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D91502BBF7631004C5E2E /* CocoaTouchUITests.swift */; };
 		533D91532BBF7631004C5E2E /* CocoaTouchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D91522BBF7631004C5E2E /* CocoaTouchUITestsLaunchTests.swift */; };
+		533D91602BBF7956004C5E2E /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D915F2BBF7956004C5E2E /* ReposTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		533D914C2BBF7631004C5E2E /* CocoaTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		533D91502BBF7631004C5E2E /* CocoaTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaTouchUITests.swift; sourceTree = "<group>"; };
 		533D91522BBF7631004C5E2E /* CocoaTouchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaTouchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		533D915F2BBF7956004C5E2E /* ReposTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				533D91382BBF7631004C5E2E /* Assets.xcassets */,
 				533D913A2BBF7631004C5E2E /* LaunchScreen.storyboard */,
 				533D913D2BBF7631004C5E2E /* Info.plist */,
+				533D915F2BBF7956004C5E2E /* ReposTableViewController.swift */,
 			);
 			path = CocoaTouch;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				533D91342BBF7630004C5E2E /* ViewController.swift in Sources */,
+				533D91602BBF7956004C5E2E /* ReposTableViewController.swift in Sources */,
 				533D91302BBF7630004C5E2E /* AppDelegate.swift in Sources */,
 				533D91322BBF7630004C5E2E /* SceneDelegate.swift in Sources */,
 			);
