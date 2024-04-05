@@ -171,3 +171,33 @@ class ReposTableViewController: UITableViewController {
     */
 
 }
+
+extension ReposTableViewController: UITextFieldDelegate {
+    // 자바 스크립트에서 ToDo Add 버튼 클릭 이벤트랑 똑같음 🫧 (이벤트 핸들링)
+    // input 창을 넣는다면 얘가 동작할거라는 거지
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let enteredUsername = textField.text else {
+            repos = []
+            tableView.reloadData() // 여긴 왜 weak self 를 안 썼냐면? textFieldShouldReturn 함수 자체가 메인 스레드에서 호출돼서
+            // 훨씬 코드가 간단하다는 말이야
+            return true
+        }
+        
+        fetchRepos(forUsername: enteredUsername) {[weak self] result in
+            switch result {
+            case .success(let repos):
+                self?.repos = repos
+            case .failure(let error):
+                self?.repos = []
+                print("There was an error: \(error)")
+            }
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+        
+        textField.resignFirstResponder() // 포커스를 잃는 거 (키보드가 내려가는 행동)
+        
+        return true
+    }
+}
