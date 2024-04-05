@@ -30,6 +30,7 @@ enum ResponseError: Error {
 class ReposTableViewController: UITableViewController {
     
     internal var session = URLSession.shared // 공유할 수 있는 세션을 만듦
+    internal var repos = [Repo]() // 레포지터리 구조체 배열을 저장하는
     
     @discardableResult // URLSessionDataTask 이 옵셔널한테 .. 그래서 넣음
     internal func fetchRepos(forUsername username: String,
@@ -64,13 +65,18 @@ class ReposTableViewController: UITableViewController {
                 task.resume()
 
                 return task
-        
     }
 
+    // 화면이 만들어진 다음에 불리는 함수 ✨
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Repos"
+        
+        let repo1 = Repo(name: "Test Repo 1", url: URL(string: "https://example.com/repo1")) // 더미 (가짜) 데이터
+        let repo2 = Repo(name: "Test Repo 2", url: URL(string: "https://example.com/repo2"))
+        
+        repos.append(contentsOf: [repo1, repo2]) // 뒤에 오는 배열을 repos 에 순차적으로 저장함
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -83,23 +89,26 @@ class ReposTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return repos.count
     }
 
-    /*
+    
+    // tableView 가 Reuseable 한 걸 만들어내는 거야 완전한 성능 개선 ✨
+    // indexPath 가 몇층인지 | 건물은 그대로, 인테리어만 바뀌는 거라고 생각혀
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath)
 
-        // Configure the cell...
+        let repo = repos[indexPath.row] // 몇층인지, 우리 2개 넣었지
+        cell.textLabel?.text = repo.name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
