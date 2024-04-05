@@ -76,7 +76,7 @@ class ReposTableViewController: UITableViewController {
         // let repo1 = Repo(name: "Test Repo 1", url: URL(string: "https://example.com/repo1")) // 더미 (가짜) 데이터
         // repos.append(contentsOf: [repo1, repo2]) // 뒤에 오는 배열을 repos 에 순차적으로 저장함
         
-        fetchRepos(forUsername: "APP-iOS5th") { [weak self] result in
+        fetchRepos(forUsername: "APP-iOS5th") { [weak self] result in // 따옴표로 넣은 하드코딩한거임
             switch result {
             case .success(let repos):
                 self?.repos = repos
@@ -88,7 +88,7 @@ class ReposTableViewController: UITableViewController {
                 self?.tableView.reloadData()
             }
         }
-    } 
+    }
 
     // MARK: - Table view data source
 
