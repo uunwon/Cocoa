@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 struct Repo: Codable {
     let name: String?
@@ -112,6 +113,15 @@ class ReposTableViewController: UITableViewController {
         cell.textLabel?.text = repo.name
 
         return cell
+    }
+    
+    // 사용자가 특정 row 를 선택하면 호출되는 함수 ✨
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let repo = repos[indexPath.row] // 몇번째 row 에 있는 애인지 가져와
+        guard let repoURL = repo.url else { return } // URL 는 경우 여기서 종료
+        
+        let webViewController = SFSafariViewController(url: repoURL)
+        show(webViewController, sender: nil)
     }
     
 
