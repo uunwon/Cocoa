@@ -7,10 +7,70 @@
 
 import UIKit
 
+struct Repo: Codable {
+    let name: String?
+    let url: URL?
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case url = "html_url"
+    }
+}
+
+enum FetchReposResult {
+    case success([Repo])
+    case failure(Error)
+}
+
+enum ResponseError: Error {
+    case requestUnsuccessful
+    case unexpectedResponseStructure
+}
+
 class ReposTableViewController: UITableViewController {
+    
+    internal var session = URLSession.shared // 공유할 수 있는 세션을 만듦
+    
+    @discardableResult // URLSessionDataTask 이 옵셔널한테 .. 그래서 넣음
+    internal func fetchRepos(forUsername username: String,
+                             completionHandler: @escaping (FetchReposResult) -> Void) -> URLSessionDataTask? {
+        
+                let urlString = "https://api.github.com/users/\(username)/repos"
+                guard let url = URL(string: urlString) else {
+                        return nil
+                }
+                
+                var request = URLRequest(url: url)
+                request.setValue("application/vnd.github.v3+json",
+                  forHTTPHeaderField: "Accept")
+                let task = session.dataTask(with: request) { (data,
+                  response, error) in
+                    
+                    // First unwrap the optional data
+                    guard let data = data else {
+                        completionHandler(.failure(ResponseError.requestUnsuccessful))
+                        return
+                    }
+                    
+                    do {
+                        let decoder = JSONDecoder()
+                        let responseObject = try decoder.decode([Repo].self, from: data)
+                        
+                        completionHandler(.success(responseObject))
+                    } catch {
+                        completionHandler(.failure(error))
+                    }
+                }
+                task.resume()
+
+                return task
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Repos"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
