@@ -9,6 +9,24 @@ import XCTest
 @testable import CocoaTouch
 
 final class CocoaTouchTests: XCTestCase {
+    
+    var viewControllerUnderTest: ReposTableViewController? // optional value
+    
+    // 테스트 함수에 불러오는거 오버라이딩 🏇 할 거임
+    override func setUp() {
+        viewControllerUnderTest = ReposTableViewController()
+    }
+    
+    override func tearDown() {
+        viewControllerUnderTest = nil
+        super.tearDown()
+    }
+    
+    // 테스트 코드 이름은 내가 하려고 하는 일을 최대한 써주는게 좋음 🫧
+    // ‼️ 레포(테스트할 대상)가 not nil 이길 바람 ~
+    func testThatRepoIsNotNil() {
+        XCTAssertNotNil(viewControllerUnderTest?.repos)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
