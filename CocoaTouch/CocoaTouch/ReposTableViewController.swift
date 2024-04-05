@@ -30,7 +30,7 @@ enum ResponseError: Error {
 
 class ReposTableViewController: UITableViewController {
     
-    internal var session = URLSession.shared // 공유할 수 있는 세션을 만듦
+    internal var session = URLSession.shared // 공유할 수 있는 세션을 만듦 (원격 접속하는 판을 깔아둠)
     internal var repos = [Repo]() // 레포지터리 구조체 배열을 저장하는
     
     @discardableResult // URLSessionDataTask 이 옵셔널한테 .. 그래서 넣음
