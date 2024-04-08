@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  HelloSwiftUI
+//  RedSwiftUI
 //
 //  Created by uunwon on 4/8/24.
 //
