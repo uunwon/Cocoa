@@ -17,6 +17,7 @@
 		533814732BC3BC890048F169 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814722BC3BC890048F169 /* IconView.swift */; };
 		533814752BC3C5E30048F169 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814742BC3C5E30048F169 /* ImageView.swift */; };
 		533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814762BC3D1D60048F169 /* AnimalImageView.swift */; };
+		533814792BC3DBAE0048F169 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814782BC3DBAE0048F169 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		533814722BC3BC890048F169 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		533814742BC3C5E30048F169 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		533814762BC3D1D60048F169 /* AnimalImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImageView.swift; sourceTree = "<group>"; };
+		533814782BC3DBAE0048F169 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				533814722BC3BC890048F169 /* IconView.swift */,
 				533814742BC3C5E30048F169 /* ImageView.swift */,
 				533814762BC3D1D60048F169 /* AnimalImageView.swift */,
+				533814782BC3DBAE0048F169 /* ButtonView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -163,6 +166,7 @@
 				5338146B2BC3AC450048F169 /* SpacerView.swift in Sources */,
 				533814752BC3C5E30048F169 /* ImageView.swift in Sources */,
 				533814712BC3B5A90048F169 /* TextView.swift in Sources */,
+				533814792BC3DBAE0048F169 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
