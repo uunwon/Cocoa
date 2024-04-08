@@ -21,7 +21,8 @@ struct PickerView: View {
             })
             .pickerStyle(SegmentedPickerStyle())
             // onChange 를 이용해 변화를 추적해서 메시지 전달함 ~
-            .onChange(of: message) { newValue in
+            // oldValue 는 _ 이렇게만 쓸 수 있음
+            .onChange(of: message) { oldValue, newValue in
                 switch newValue {
                 case "happy": message = "Be happy and joyous"
                 case "sad": message = "Life can be a struggle at times"
