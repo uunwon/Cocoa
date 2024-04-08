@@ -15,6 +15,8 @@ struct ContentView: View {
     var body: some View {
         VStack { // Vertical 위아래
             Text("❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️")
+                .padding(.bottom)
+            
             Slider(value: $sliderValue, in: 0...1)
                 .padding(.bottom)
                 .accentColor(.red)

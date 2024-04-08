@@ -14,6 +14,7 @@
 		5338146B2BC3AC450048F169 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338146A2BC3AC450048F169 /* SpacerView.swift */; };
 		5338146F2BC3B1630048F169 /* OffsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338146E2BC3B1630048F169 /* OffsetView.swift */; };
 		533814712BC3B5A90048F169 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814702BC3B5A90048F169 /* TextView.swift */; };
+		533814732BC3BC890048F169 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814722BC3BC890048F169 /* IconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5338146A2BC3AC450048F169 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		5338146E2BC3B1630048F169 /* OffsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetView.swift; sourceTree = "<group>"; };
 		533814702BC3B5A90048F169 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		533814722BC3BC890048F169 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5338146A2BC3AC450048F169 /* SpacerView.swift */,
 				5338146E2BC3B1630048F169 /* OffsetView.swift */,
 				533814702BC3B5A90048F169 /* TextView.swift */,
+				533814722BC3BC890048F169 /* IconView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
+				533814732BC3BC890048F169 /* IconView.swift in Sources */,
 				5338146F2BC3B1630048F169 /* OffsetView.swift in Sources */,
 				5338145D2BC3AA710048F169 /* RedSwiftUIApp.swift in Sources */,
 				5338146B2BC3AC450048F169 /* SpacerView.swift in Sources */,
