@@ -7,59 +7,43 @@
 
 import SwiftUI
 
+extension Color {
+    static let myCustomColor2 = Color(red: 0.5, green: 0.8, blue: 0.3)
+}
+
+@available(iOS 15.0, *)
 struct ContentView: View {
-    @State private var isOn = true //상태 저장 변수 추가 - 토글 버튼을 위한 ✨
-    @State private var value = 0
-    @State private var sliderValue = 0.5
+    @State private var message = ""
+    @FocusState var dismissKeyboard: Bool
     
     var body: some View {
-        VStack { // Vertical 위아래
-            Text("❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️")
-                .padding(.bottom)
+        VStack {
+            Text("Text-Field")
+                .font(.custom("AmericanTypewriter", size: 24))
+                .bold()
+                .padding(.top)
             
-            Slider(value: $sliderValue, in: 0...1)
-                .padding(.bottom)
-                .accentColor(.red)
+            TextField("❥ Placeholder text", text: $message)
+                .textFieldStyle(.roundedBorder)
+                .autocorrectionDisabled(true)
+                .textContentType(.emailAddress)
+                .submitLabel(.done)
+                .padding()
+                .focused($dismissKeyboard)
             
-            Stepper("❤️‍🔥 Stepper value is \(value)", value: $value, in: 0...10)
-                .padding([.leading, .bottom, .trailing], 30.0)
+            SecureField("❥ Password", text: $message)
+                .textFieldStyle(.roundedBorder)
+                .padding()
             
-            Toggle("❤️‍🩹 Toggle message on/off", isOn: $isOn)
-                .padding(.horizontal, 30.0)
-                .tint(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+            TextEditor(text: $message)
             
-            Text("Up")
-                // add modifier
-                .background(Color.red) // closer 이기에 가능한 생성자 변경 가능
-                .padding(.vertical)
-                .foregroundColor(Color.white)
-                
-            HStack { // Horizontal 양옆
-                Text("Left")
-                Text("Right")
+            Button("Hide Keyboard") {
+                dismissKeyboard = false
             }
-            .padding(.bottom)
-            .fontWeight(.semibold)
-            .foregroundColor(.gray) // foregroundStyle 라는 상위 개념이 있음
-            
-            ZStack {
-                Text("Background")
-                Text("Foreground")
-            }
-            .padding(.bottom)
-            .foregroundColor(Color.red)
-            
-            
-            Button("❤️‍🩹") {
-                print("button1 click")
-            }
-            .font(.largeTitle)
-            
-            Button(action: {
-                print("button2 click")
-            }, label: {
-                Text("❤️")
-            })
+            .accentColor(.black)
+            .bold()
+            .italic()
+            .padding(.top)
         }
     }
 }

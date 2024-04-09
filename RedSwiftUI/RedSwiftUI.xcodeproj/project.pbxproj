@@ -20,6 +20,7 @@
 		533814792BC3DBAE0048F169 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533814782BC3DBAE0048F169 /* ButtonView.swift */; };
 		5338147B2BC3DF860048F169 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338147A2BC3DF860048F169 /* PickerView.swift */; };
 		534C09382BC4C4C8008D5F5F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C09372BC4C4C8008D5F5F /* FieldView.swift */; };
+		534C093A2BC4CC98008D5F5F /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C09392BC4CC98008D5F5F /* BasicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		533814782BC3DBAE0048F169 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		5338147A2BC3DF860048F169 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		534C09372BC4C4C8008D5F5F /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		534C09392BC4CC98008D5F5F /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */,
 				5338145E2BC3AA710048F169 /* ContentView.swift */,
+				534C09392BC4CC98008D5F5F /* BasicView.swift */,
 				5338146A2BC3AC450048F169 /* SpacerView.swift */,
 				5338146E2BC3B1630048F169 /* OffsetView.swift */,
 				533814702BC3B5A90048F169 /* TextView.swift */,
@@ -167,6 +170,7 @@
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
 				533814732BC3BC890048F169 /* IconView.swift in Sources */,
+				534C093A2BC4CC98008D5F5F /* BasicView.swift in Sources */,
 				5338146F2BC3B1630048F169 /* OffsetView.swift in Sources */,
 				5338145D2BC3AA710048F169 /* RedSwiftUIApp.swift in Sources */,
 				5338146B2BC3AC450048F169 /* SpacerView.swift in Sources */,
