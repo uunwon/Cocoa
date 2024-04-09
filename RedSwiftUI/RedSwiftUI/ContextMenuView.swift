@@ -17,6 +17,7 @@ struct ContextMenuView: View {
             Text("Context Menu")
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
+                .padding(.bottom, 40.0)
             
             Image(systemName: "heart.fill")
                 .resizable()
@@ -28,12 +29,12 @@ struct ContextMenuView: View {
                     Button {
                         
                     } label: {
-                        Label("Add to Favorite", systemImage: "heart")
+                        Label("Love with Schatzi", systemImage: "heart")
                     }
                     Button {
                         
                     } label: {
-                        Label("Show in Maps", systemImage: "mappin")
+                        Label("Make Love", systemImage: "mappin")
                     }
                 }
         }
