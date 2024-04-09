@@ -19,8 +19,12 @@ struct AlertView: View {
             Text("Alert")
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
+                .padding(.bottom)
             
-            Button("Click Alert") {
+            
+            // ✨ Alert
+            Text("🂱")
+            Button("Show Alert") {
                 showAlert.toggle()
             }
             .alert("Warning!", isPresented: $showAlert) {
@@ -33,7 +37,31 @@ struct AlertView: View {
                 Text("Zombies on the loose")
             }
             .foregroundColor(.black)
-            .bold()
+            .padding(.bottom)
+            
+            
+            // ✨ Action Sheet
+            Text("🂲")
+            Button("Show ActionSheet") {
+                showAlert.toggle()
+            }
+            .confirmationDialog("Warning!", isPresented: $showAlert,
+                                titleVisibility: .visible) {
+                Button(role: .none) {
+                    print("option1 action")
+                } label: {
+                    Text("option1")
+                }
+                
+                Button(role: .destructive) {
+                    print("option2 action")
+                } label: {
+                    Text("option2")
+                }
+            } message: {
+                Text("Zombies on the loose")
+            }
+            .foregroundColor(.black)
         }
     }
 }
