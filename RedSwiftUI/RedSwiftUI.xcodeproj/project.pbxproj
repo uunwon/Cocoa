@@ -28,6 +28,7 @@
 		535AEA942BC51AC1009BD112 /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEA932BC51AC1009BD112 /* ContextMenuView.swift */; };
 		535AEA962BC520A8009BD112 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEA952BC520A8009BD112 /* ListView.swift */; };
 		535AEA982BC5252D009BD112 /* StructView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEA972BC5252D009BD112 /* StructView.swift */; };
+		535AEA9A2BC529A1009BD112 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEA992BC529A1009BD112 /* FormView.swift */; };
 		535E78782BC4FA91001243EB /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78772BC4FA91001243EB /* LinkView.swift */; };
 		535E787A2BC4FEA5001243EB /* TapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78792BC4FEA5001243EB /* TapGestureView.swift */; };
 		535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E787B2BC5055E001243EB /* ScaleEffectView.swift */; };
@@ -56,6 +57,7 @@
 		535AEA932BC51AC1009BD112 /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
 		535AEA952BC520A8009BD112 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		535AEA972BC5252D009BD112 /* StructView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructView.swift; sourceTree = "<group>"; };
+		535AEA992BC529A1009BD112 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		535E78772BC4FA91001243EB /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		535E78792BC4FEA5001243EB /* TapGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureView.swift; sourceTree = "<group>"; };
 		535E787B2BC5055E001243EB /* ScaleEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				535AEA932BC51AC1009BD112 /* ContextMenuView.swift */,
 				535AEA952BC520A8009BD112 /* ListView.swift */,
 				535AEA972BC5252D009BD112 /* StructView.swift */,
+				535AEA992BC529A1009BD112 /* FormView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -214,6 +217,7 @@
 				533814752BC3C5E30048F169 /* ImageView.swift in Sources */,
 				533814712BC3B5A90048F169 /* TextView.swift in Sources */,
 				535E787A2BC4FEA5001243EB /* TapGestureView.swift in Sources */,
+				535AEA9A2BC529A1009BD112 /* FormView.swift in Sources */,
 				535AEA962BC520A8009BD112 /* ListView.swift in Sources */,
 				5338147B2BC3DF860048F169 /* PickerView.swift in Sources */,
 				534C09402BC4E1E9008D5F5F /* ToggleView.swift in Sources */,
