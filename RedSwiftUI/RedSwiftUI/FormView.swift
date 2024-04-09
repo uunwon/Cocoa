@@ -52,6 +52,7 @@ struct FormView: View {
                 Toggle(isOn: $flag, label: {
                     Text("Click me")
                 })
+                .disabled(flag)
             }
             
             GroupBox(label: Text("Group Box")) {
