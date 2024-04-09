@@ -24,6 +24,7 @@
 		534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C093B2BC4D276008D5F5F /* PickerDetailView.swift */; };
 		534C093E2BC4D558008D5F5F /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C093D2BC4D558008D5F5F /* DatePickerView.swift */; };
 		534C09402BC4E1E9008D5F5F /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C093F2BC4E1E9008D5F5F /* ToggleView.swift */; };
+		535E78782BC4FA91001243EB /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78772BC4FA91001243EB /* LinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		534C093B2BC4D276008D5F5F /* PickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailView.swift; sourceTree = "<group>"; };
 		534C093D2BC4D558008D5F5F /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		534C093F2BC4E1E9008D5F5F /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		535E78772BC4FA91001243EB /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				534C093F2BC4E1E9008D5F5F /* ToggleView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
+				535E78772BC4FA91001243EB /* LinkView.swift */,
 			);
 			path = RedSwiftUI;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */,
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
+				535E78782BC4FA91001243EB /* LinkView.swift in Sources */,
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
 				533814732BC3BC890048F169 /* IconView.swift in Sources */,
 				534C093E2BC4D558008D5F5F /* DatePickerView.swift in Sources */,
