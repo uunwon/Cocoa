@@ -109,9 +109,9 @@
 				535E787B2BC5055E001243EB /* ScaleEffectView.swift */,
 				535AEA912BC512E4009BD112 /* AlertView.swift */,
 				535AEA932BC51AC1009BD112 /* ContextMenuView.swift */,
+				535AEA952BC520A8009BD112 /* ListView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
-				535AEA952BC520A8009BD112 /* ListView.swift */,
 			);
 			path = RedSwiftUI;
 			sourceTree = "<group>";
