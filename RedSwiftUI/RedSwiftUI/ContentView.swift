@@ -9,14 +9,14 @@ import SwiftUI
 
 @available(iOS 15.0, *)
 struct ContentView: View {
-    @State var myDate = Date.now
-    
     var body: some View {
         VStack {
-            Text("Date Picker")
+            Text("൹")
+                .padding(.top)
+            
+            Text("Title")
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
-                .padding(.top)
         }
     }
 }
