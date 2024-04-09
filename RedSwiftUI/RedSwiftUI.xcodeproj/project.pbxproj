@@ -26,6 +26,7 @@
 		534C09402BC4E1E9008D5F5F /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C093F2BC4E1E9008D5F5F /* ToggleView.swift */; };
 		535E78782BC4FA91001243EB /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78772BC4FA91001243EB /* LinkView.swift */; };
 		535E787A2BC4FEA5001243EB /* TapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78792BC4FEA5001243EB /* TapGestureView.swift */; };
+		535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E787B2BC5055E001243EB /* ScaleEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		534C093F2BC4E1E9008D5F5F /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		535E78772BC4FA91001243EB /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		535E78792BC4FEA5001243EB /* TapGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureView.swift; sourceTree = "<group>"; };
+		535E787B2BC5055E001243EB /* ScaleEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				534C093F2BC4E1E9008D5F5F /* ToggleView.swift */,
 				535E78772BC4FA91001243EB /* LinkView.swift */,
 				535E78792BC4FEA5001243EB /* TapGestureView.swift */,
+				535E787B2BC5055E001243EB /* ScaleEffectView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */,
 				534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */,
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
 				535E78782BC4FA91001243EB /* LinkView.swift in Sources */,
