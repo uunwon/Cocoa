@@ -30,15 +30,15 @@ struct ScaleEffectView: View {
                 .frame(width: 200, height: 200)
                 .foregroundColor(.red)
                 .scaleEffect(finalValue + tempValue)
-                .gesture(
+                .gesture( // gesture modifier
                     MagnificationGesture()
+                        // option amount 클릭하면 타입 나옴!!
                         .onChanged{ amount in
                             tempValue = amount - 1
                         }
                         .onEnded { amount in
                             finalValue += tempValue
                             tempValue = 0
-                            
                         }
                 )
         }
