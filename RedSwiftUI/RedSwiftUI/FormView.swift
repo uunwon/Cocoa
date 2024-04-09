@@ -32,6 +32,7 @@ struct FormView: View {
 //                Section("Just a Header") { // header 는 대문자 변환
 //                    Text("This Section uses a simple header")
 //                }
+//                .textCase(nil) // header text 대문자 안 되게 하기
 //                Section {
 //                    Text("This Section uses a simple footer")
 //                } footer: {
