@@ -21,6 +21,7 @@
 		5338147B2BC3DF860048F169 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338147A2BC3DF860048F169 /* PickerView.swift */; };
 		534C09382BC4C4C8008D5F5F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C09372BC4C4C8008D5F5F /* FieldView.swift */; };
 		534C093A2BC4CC98008D5F5F /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C09392BC4CC98008D5F5F /* BasicView.swift */; };
+		534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C093B2BC4D276008D5F5F /* PickerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		5338147A2BC3DF860048F169 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		534C09372BC4C4C8008D5F5F /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		534C09392BC4CC98008D5F5F /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
+		534C093B2BC4D276008D5F5F /* PickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				533814782BC3DBAE0048F169 /* ButtonView.swift */,
 				5338147A2BC3DF860048F169 /* PickerView.swift */,
 				534C09372BC4C4C8008D5F5F /* FieldView.swift */,
+				534C093B2BC4D276008D5F5F /* PickerDetailView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */,
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
 				533814732BC3BC890048F169 /* IconView.swift in Sources */,
