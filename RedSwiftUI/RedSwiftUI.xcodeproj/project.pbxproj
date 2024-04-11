@@ -40,6 +40,7 @@
 		535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E787B2BC5055E001243EB /* ScaleEffectView.swift */; };
 		539875B62BC7B67300379BFC /* TabPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539875B52BC7B67300379BFC /* TabPracticeView.swift */; };
 		539875B82BC7C67D00379BFC /* GridPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539875B72BC7C67D00379BFC /* GridPracticeView.swift */; };
+		539875BA2BC7CC3500379BFC /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539875B92BC7CC3500379BFC /* AnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		535E787B2BC5055E001243EB /* ScaleEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectView.swift; sourceTree = "<group>"; };
 		539875B52BC7B67300379BFC /* TabPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPracticeView.swift; sourceTree = "<group>"; };
 		539875B72BC7C67D00379BFC /* GridPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPracticeView.swift; sourceTree = "<group>"; };
+		539875B92BC7CC3500379BFC /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				53279CD82BC78645009C1995 /* SeparateFile.swift */,
 				539875B52BC7B67300379BFC /* TabPracticeView.swift */,
 				539875B72BC7C67D00379BFC /* GridPracticeView.swift */,
+				539875B92BC7CC3500379BFC /* AnimationView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -233,6 +236,7 @@
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
 				535E78782BC4FA91001243EB /* LinkView.swift in Sources */,
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
+				539875BA2BC7CC3500379BFC /* AnimationView.swift in Sources */,
 				53279CD32BC76C59009C1995 /* ScrollPracticeView.swift in Sources */,
 				533814732BC3BC890048F169 /* IconView.swift in Sources */,
 				539875B82BC7C67D00379BFC /* GridPracticeView.swift in Sources */,

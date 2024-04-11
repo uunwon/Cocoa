@@ -48,11 +48,11 @@ struct OutlineGroupView: View {
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
             
-            List {
-                OutlineGroup(Animals, id: \.id, children: \.classification) { creature in
-                    Text(creature.name)
-                }
-            }
+//            List {
+//                OutlineGroup(Animals, id: \.id, children: \.classification) { creature in
+//                    Text(creature.name)
+//                }
+//            }
         }
     }
 }
