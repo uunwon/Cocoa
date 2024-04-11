@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53279CCD2BC764D6009C1995 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CCC2BC764D6009C1995 /* DisclosureGroupView.swift */; };
 		53279CCF2BC766EE009C1995 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CCE2BC766EE009C1995 /* ScrollView.swift */; };
+		53279CD12BC76A82009C1995 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD02BC76A82009C1995 /* OutlineGroupView.swift */; };
 		5338145D2BC3AA710048F169 /* RedSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */; };
 		5338145F2BC3AA710048F169 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145E2BC3AA710048F169 /* ContentView.swift */; };
 		533814612BC3AA720048F169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533814602BC3AA720048F169 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		53279CCC2BC764D6009C1995 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		53279CCE2BC766EE009C1995 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		53279CD02BC76A82009C1995 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		533814592BC3AA710048F169 /* RedSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSwiftUIApp.swift; sourceTree = "<group>"; };
 		5338145E2BC3AA710048F169 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				535AEA992BC529A1009BD112 /* FormView.swift */,
 				53279CCC2BC764D6009C1995 /* DisclosureGroupView.swift */,
 				53279CCE2BC766EE009C1995 /* ScrollView.swift */,
+				53279CD02BC76A82009C1995 /* OutlineGroupView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -221,6 +224,7 @@
 				5338146B2BC3AC450048F169 /* SpacerView.swift in Sources */,
 				534C09382BC4C4C8008D5F5F /* FieldView.swift in Sources */,
 				533814752BC3C5E30048F169 /* ImageView.swift in Sources */,
+				53279CD12BC76A82009C1995 /* OutlineGroupView.swift in Sources */,
 				533814712BC3B5A90048F169 /* TextView.swift in Sources */,
 				535E787A2BC4FEA5001243EB /* TapGestureView.swift in Sources */,
 				53279CCD2BC764D6009C1995 /* DisclosureGroupView.swift in Sources */,
