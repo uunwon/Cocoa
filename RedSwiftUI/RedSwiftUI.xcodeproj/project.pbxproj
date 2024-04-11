@@ -11,6 +11,7 @@
 		53279CD12BC76A82009C1995 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD02BC76A82009C1995 /* OutlineGroupView.swift */; };
 		53279CD32BC76C59009C1995 /* ScrollPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */; };
 		53279CD52BC77481009C1995 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD42BC77481009C1995 /* NavigationStackView.swift */; };
+		53279CD72BC77C02009C1995 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD62BC77C02009C1995 /* NavigationLinkView.swift */; };
 		5338145D2BC3AA710048F169 /* RedSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */; };
 		5338145F2BC3AA710048F169 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145E2BC3AA710048F169 /* ContentView.swift */; };
 		533814612BC3AA720048F169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533814602BC3AA720048F169 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		53279CD02BC76A82009C1995 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPracticeView.swift; sourceTree = "<group>"; };
 		53279CD42BC77481009C1995 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
+		53279CD62BC77C02009C1995 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
 		533814592BC3AA710048F169 /* RedSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSwiftUIApp.swift; sourceTree = "<group>"; };
 		5338145E2BC3AA710048F169 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */,
 				53279CD02BC76A82009C1995 /* OutlineGroupView.swift */,
 				53279CD42BC77481009C1995 /* NavigationStackView.swift */,
+				53279CD62BC77C02009C1995 /* NavigationLinkView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -216,6 +219,7 @@
 				535AEA942BC51AC1009BD112 /* ContextMenuView.swift in Sources */,
 				535AEA922BC512E4009BD112 /* AlertView.swift in Sources */,
 				534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */,
+				53279CD72BC77C02009C1995 /* NavigationLinkView.swift in Sources */,
 				533814772BC3D1D60048F169 /* AnimalImageView.swift in Sources */,
 				535E78782BC4FA91001243EB /* LinkView.swift in Sources */,
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
