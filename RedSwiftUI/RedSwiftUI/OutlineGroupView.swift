@@ -11,7 +11,8 @@ class Species: Identifiable {
     let id = UUID()
     var name: String
     var classification: [Species]?
-    init(name: String, classification: [Species]? = nil) {
+    // 생성자도 함수야, 기본값은 nil 이고 -> 그럼 classification 없는 애까지 만들어줌
+    init(name: String, classification: [Species]? = nil) { // 옵셔널이기 때문에 nil 한거임
         self.name = name
         self.classification = classification
     }
@@ -30,6 +31,7 @@ struct OutlineGroupView: View {
             Species(name: "코끼리"),
             Species(name: "고래"),
         ]),
+        
         Species(name: "조류", classification: [
             Species(name: "Canary"),
             Species(name: "Parakeet"),
@@ -45,12 +47,13 @@ struct OutlineGroupView: View {
             Text("Outline Group")
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
+            
+            List {
+                OutlineGroup(Animals, id: \.id, children: \.classification) { creature in
+                    Text(creature.name)
+                }
+            }
         }
-//        List {
-//            OutlineGroup(Animals, id: \.id, childer: \.classification { creature in
-//                Text(creature.name)
-//            })
-//        }
     }
 }
 
