@@ -11,6 +11,7 @@ import SwiftUI
 struct AnimationView: View {
     @State var move = true
     @State var changeMe = true
+    let fontSize: CGFloat = 100.0
     
     var body: some View {
         VStack {
@@ -33,7 +34,7 @@ struct AnimationView: View {
         
         // ✨ Scale Effect
         Image(systemName: "tortoise.fill")
-            .font(.system(size: 100))
+            .font(.system(size: fontSize))
             .foregroundStyle(.customWine)
             .scaleEffect(changeMe ? 1.75 : 1)
             .animation(.default, value: changeMe)
