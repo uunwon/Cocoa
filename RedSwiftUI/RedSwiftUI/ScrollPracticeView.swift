@@ -1,5 +1,5 @@
 //
-//  ScrollView.swift
+//  ScrollPracticeView.swift
 //  RedSwiftUI
 //
 //  Created by uunwon on 4/11/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-struct ScrollView: View {
+struct ScrollPracticeView: View {
     var body: some View {
         VStack {
             Image(systemName: "hare")
@@ -18,7 +18,7 @@ struct ScrollView: View {
                 .font(.custom("AmericanTypewriter", size: 24))
                 .bold()
             
-            ScrollView(.vertical, showIndicators: true) {
+            ScrollView(Axis.Set.vertical, showsIndicators: true) {
                 ForEach(0..<50) {
                     Text("Item #\($0)")
                 }
@@ -28,5 +28,5 @@ struct ScrollView: View {
 }
 
 #Preview {
-    ScrollView()
+    ScrollPracticeView()
 }
