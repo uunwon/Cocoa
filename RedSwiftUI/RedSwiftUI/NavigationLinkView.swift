@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct FileView: View {
-    var choice: String
-    
-    var body: some View {
-        VStack {
-            Text(" choose = ✨ \(choice) ✨")
-        }
-    }
-}
+// struct FileView: View {
+//    var choice: String
+//    
+//    var body: some View {
+//        VStack {
+//            Text(" choose = ✨ \(choice) ✨")
+//        }
+//    }
+//}
 
 struct Movie: Identifiable, Hashable {
     let id = UUID() // 타입이 아니고 난수 부여라서 '=' 작성
@@ -44,29 +44,61 @@ struct MovieDetailView: View {
     }
 }
 
-@available(iOS 15.0, *)
+class ShareString: ObservableObject {
+        @Published var message = ""
+}
+
+struct FileView: View {
+    @EnvironmentObject var choice: ShareString
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            VStack {
+                Spacer()
+                TextField("Type here: ", text: $choice.message)
+                Spacer()
+            }
+            Spacer()
+        }.background(Color.yellow)
+    }
+}
+
 struct NavigationLinkView: View {
     // 뷰를 넘나들 때 다 사용할 수 있도록, 그 상태가 계-속 유지되도록 하는게 StateObject
     // 그냥 State 면 이 뷰가 사라지면 사라지는 변수가 되거든 ‼️
-    @StateObject private var viewModel = MovieListViewModel() // movies 배열을 가진 객체
+    // @StateObject private var viewModel = MovieListViewModel() // movies 배열을 가진 객체
+    // @State var message = ""
+    @StateObject var showMe = ShareString() // 객체 인스턴스를 생성하기 때문에 () 씀
     
     var body: some View {
         NavigationStack {
             
-            // 다른 뷰를 호출해서 불러옴
+            // ✨ 다른 뷰를 호출해서 불러옴
 //            NavigationLink(destination: FileView(choice: "Head")) {
 //                Text("Choose Head")
 //                    .foregroundStyle(Color.black)
 //            }
             
-            List(viewModel.movies) { movie in // 각각 요소 가져오기
-                NavigationLink(movie.title, value: movie)
+            // ✨ 리스트마다 다른 뷰로 이동하기
+//            List(viewModel.movies) { movie in // 각각 요소 가져오기
+//                NavigationLink(movie.title, value: movie)
+//            }
+//            .navigationTitle("Movie List")
+//            .navigationDestination(for: Movie.self) { movie in
+//                MovieDetailView(movie: movie)
+//            }
+            
+            TextField("Type here:", text: $showMe.message)
+            NavigationLink(destination: FileView()) {
+                Text("Heads")
             }
-            .navigationTitle("Movie List")
-            .navigationDestination(for: Movie.self) { movie in
-                MovieDetailView(movie: movie)
+            NavigationLink(destination: SeparateFile()) {
+                Text("Tails")
             }
+            .navigationTitle("Flip a Coin")
         }
+        .environmentObject(showMe)
     }
 }
 

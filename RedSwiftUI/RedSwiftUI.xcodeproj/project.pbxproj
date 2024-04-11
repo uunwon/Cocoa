@@ -12,6 +12,7 @@
 		53279CD32BC76C59009C1995 /* ScrollPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */; };
 		53279CD52BC77481009C1995 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD42BC77481009C1995 /* NavigationStackView.swift */; };
 		53279CD72BC77C02009C1995 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD62BC77C02009C1995 /* NavigationLinkView.swift */; };
+		53279CD92BC78645009C1995 /* SeparateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD82BC78645009C1995 /* SeparateFile.swift */; };
 		5338145D2BC3AA710048F169 /* RedSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */; };
 		5338145F2BC3AA710048F169 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338145E2BC3AA710048F169 /* ContentView.swift */; };
 		533814612BC3AA720048F169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533814602BC3AA720048F169 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPracticeView.swift; sourceTree = "<group>"; };
 		53279CD42BC77481009C1995 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		53279CD62BC77C02009C1995 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
+		53279CD82BC78645009C1995 /* SeparateFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateFile.swift; sourceTree = "<group>"; };
 		533814592BC3AA710048F169 /* RedSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5338145C2BC3AA710048F169 /* RedSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSwiftUIApp.swift; sourceTree = "<group>"; };
 		5338145E2BC3AA710048F169 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				53279CD02BC76A82009C1995 /* OutlineGroupView.swift */,
 				53279CD42BC77481009C1995 /* NavigationStackView.swift */,
 				53279CD62BC77C02009C1995 /* NavigationLinkView.swift */,
+				53279CD82BC78645009C1995 /* SeparateFile.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -242,6 +245,7 @@
 				5338147B2BC3DF860048F169 /* PickerView.swift in Sources */,
 				534C09402BC4E1E9008D5F5F /* ToggleView.swift in Sources */,
 				533814792BC3DBAE0048F169 /* ButtonView.swift in Sources */,
+				53279CD92BC78645009C1995 /* SeparateFile.swift in Sources */,
 				535AEA982BC5252D009BD112 /* StructView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

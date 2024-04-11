@@ -11,7 +11,7 @@ import SwiftUI
 struct RedSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            FormView()
+            ContentView()
         }
     }
 }
