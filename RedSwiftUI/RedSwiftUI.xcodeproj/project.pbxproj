@@ -39,6 +39,7 @@
 		535E787A2BC4FEA5001243EB /* TapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E78792BC4FEA5001243EB /* TapGestureView.swift */; };
 		535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E787B2BC5055E001243EB /* ScaleEffectView.swift */; };
 		539875B62BC7B67300379BFC /* TabPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539875B52BC7B67300379BFC /* TabPracticeView.swift */; };
+		539875B82BC7C67D00379BFC /* GridPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539875B72BC7C67D00379BFC /* GridPracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		535E78792BC4FEA5001243EB /* TapGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureView.swift; sourceTree = "<group>"; };
 		535E787B2BC5055E001243EB /* ScaleEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectView.swift; sourceTree = "<group>"; };
 		539875B52BC7B67300379BFC /* TabPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPracticeView.swift; sourceTree = "<group>"; };
+		539875B72BC7C67D00379BFC /* GridPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				53279CD62BC77C02009C1995 /* NavigationLinkView.swift */,
 				53279CD82BC78645009C1995 /* SeparateFile.swift */,
 				539875B52BC7B67300379BFC /* TabPracticeView.swift */,
+				539875B72BC7C67D00379BFC /* GridPracticeView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -232,6 +235,7 @@
 				5338145F2BC3AA710048F169 /* ContentView.swift in Sources */,
 				53279CD32BC76C59009C1995 /* ScrollPracticeView.swift in Sources */,
 				533814732BC3BC890048F169 /* IconView.swift in Sources */,
+				539875B82BC7C67D00379BFC /* GridPracticeView.swift in Sources */,
 				534C093E2BC4D558008D5F5F /* DatePickerView.swift in Sources */,
 				534C093A2BC4CC98008D5F5F /* BasicView.swift in Sources */,
 				5338146F2BC3B1630048F169 /* OffsetView.swift in Sources */,
