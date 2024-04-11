@@ -38,17 +38,17 @@ struct AnimationView: View {
             .tint(.black)
         }
         
-        // Spacer()
+        Spacer()
         
         // ✨ Scale Effect
-//        Image(systemName: "tortoise.fill")
-//            .font(.system(size: fontSize))
-//            .foregroundStyle(.customWine)
-//            .scaleEffect(changeMe ? 1.75 : 1)
-//            .animation(.default, value: changeMe)
-//            .onTapGesture {
-//                changeMe.toggle()
-//            }
+        Image(systemName: "tortoise.fill")
+            .font(.system(size: fontSize))
+            .foregroundStyle(.yellow)
+            .scaleEffect(changeMe ? 1.75 : 1)
+            .animation(.default, value: changeMe)
+            .onTapGesture {
+                changeMe.toggle()
+            }
         
         Spacer()
         
@@ -62,11 +62,11 @@ struct AnimationView: View {
             .padding()
             .tint(.black)
         
-        Text("൹ 빙 글 뱅 글 ❥")
+        Text("✨ 빙 글 뱅 글 ❥")
             .padding()
             .rotationEffect(Angle(degrees: flag ? myDegrees : 0))
             .animation(.default, value: flag)
-            .foregroundColor(.customWine)
+            .foregroundColor(.yellow)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             .bold()
         
