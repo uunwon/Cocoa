@@ -102,7 +102,8 @@ struct AnimationView: View {
         
         Button("Animation now") {
             // duration 으로 애니메이션 조절
-            withAnimation(.easeInOut(duration: 2.1)) {
+            // delay 는 시작을 지연하는
+            withAnimation(.easeInOut(duration: 2.1).delay(1)) {
                 flag.toggle()
             }
         }
