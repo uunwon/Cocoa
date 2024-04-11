@@ -10,6 +10,7 @@ import SwiftUI
 @available(iOS 15.0, *)
 struct AnimationView: View {
     @State var move = true
+    @State var changeMe = true
     
     var body: some View {
         VStack {
@@ -29,6 +30,16 @@ struct AnimationView: View {
             })
             .tint(.black)
         }
+        
+        // ✨ Scale Effect
+        Image(systemName: "tortoise.fill")
+            .font(.system(size: 100))
+            .foregroundStyle(.customWine)
+            .scaleEffect(changeMe ? 1.75 : 1)
+            .animation(.default, value: changeMe)
+            .onTapGesture {
+                changeMe.toggle()
+            }
     }
 }
 
