@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53012B812BC8B51B0079D1F9 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012B802BC8B51B0079D1F9 /* GeometryReaderView.swift */; };
 		53279CCD2BC764D6009C1995 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CCC2BC764D6009C1995 /* DisclosureGroupView.swift */; };
 		53279CD12BC76A82009C1995 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD02BC76A82009C1995 /* OutlineGroupView.swift */; };
 		53279CD32BC76C59009C1995 /* ScrollPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53012B802BC8B51B0079D1F9 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		53279CCC2BC764D6009C1995 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		53279CD02BC76A82009C1995 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		53279CD22BC76C59009C1995 /* ScrollPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPracticeView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				539875B52BC7B67300379BFC /* TabPracticeView.swift */,
 				539875B72BC7C67D00379BFC /* GridPracticeView.swift */,
 				539875B92BC7CC3500379BFC /* AnimationView.swift */,
+				53012B802BC8B51B0079D1F9 /* GeometryReaderView.swift */,
 				533814602BC3AA720048F169 /* Assets.xcassets */,
 				533814622BC3AA720048F169 /* Preview Content */,
 			);
@@ -229,6 +232,7 @@
 			files = (
 				535E787C2BC5055E001243EB /* ScaleEffectView.swift in Sources */,
 				539875B62BC7B67300379BFC /* TabPracticeView.swift in Sources */,
+				53012B812BC8B51B0079D1F9 /* GeometryReaderView.swift in Sources */,
 				535AEA942BC51AC1009BD112 /* ContextMenuView.swift in Sources */,
 				535AEA922BC512E4009BD112 /* AlertView.swift in Sources */,
 				534C093C2BC4D276008D5F5F /* PickerDetailView.swift in Sources */,
