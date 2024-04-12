@@ -42,6 +42,22 @@ struct GeometryReaderView: View {
                             .padding()
                         Text("Global X origin = \(geometry.frame(in: .global).origin.x)")
                         Text("Global Y origin = \(geometry.frame(in: .global).origin.y)")
+                        
+                        Divider()
+                        
+                        Image(systemName: "heart.fill")
+                            .padding()
+                        Text("minX = \(geometry.frame(in: .local).minX)")
+                        Text("midX = \(geometry.frame(in: .local).midX)")
+                        Text("maxX = \(geometry.frame(in: .local).maxX)")
+                        
+                        Divider()
+                        
+                        Image(systemName: "heart.fill")
+                            .padding()
+                        Text("minY = \(geometry.frame(in: .local).minY)")
+                        Text("midY = \(geometry.frame(in: .local).midY)")
+                        Text("maxY = \(geometry.frame(in: .local).maxY)")
                     }
                     .foregroundStyle(Color.white)
                 }
