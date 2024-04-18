@@ -36,6 +36,13 @@ struct AnyLayoutView: View {
                 Text("VStack")
             }
         }
+        .transaction {
+            $0.disablesAnimations = true
+        }
+        // $0 은 클로저 문법 in 앞에 오는 파라미터의 순서를 말함 ‼️
+//        .transaction { transaction in
+//            transaction.disablesAnimations = true
+//        }
     }
 }
 
