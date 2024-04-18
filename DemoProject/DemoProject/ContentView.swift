@@ -16,6 +16,7 @@ struct ContentView: View {
                 
                 MyHStackView()
             }
+            Text("Text 5")
         }
     }
 }
