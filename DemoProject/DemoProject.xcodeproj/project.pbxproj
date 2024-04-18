@@ -12,6 +12,7 @@
 		537E169E2BCF83C300BD352B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537E169D2BCF83C300BD352B /* Assets.xcassets */; };
 		537E16A12BCF83C300BD352B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537E16A02BCF83C300BD352B /* Preview Assets.xcassets */; };
 		53A9B2132BD0B0230032C3B1 /* AnyLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9B2122BD0B0230032C3B1 /* AnyLayoutView.swift */; };
+		53A9B2152BD0BB3C0032C3B1 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9B2142BD0BB3C0032C3B1 /* StackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		537E169D2BCF83C300BD352B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537E16A02BCF83C300BD352B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53A9B2122BD0B0230032C3B1 /* AnyLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLayoutView.swift; sourceTree = "<group>"; };
+		53A9B2142BD0BB3C0032C3B1 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				53A9B2122BD0B0230032C3B1 /* AnyLayoutView.swift */,
 				537E169D2BCF83C300BD352B /* Assets.xcassets */,
 				537E169F2BCF83C300BD352B /* Preview Content */,
+				53A9B2142BD0BB3C0032C3B1 /* StackView.swift */,
 			);
 			path = DemoProject;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				537E169C2BCF83C200BD352B /* ContentView.swift in Sources */,
 				53A9B2132BD0B0230032C3B1 /* AnyLayoutView.swift in Sources */,
 				537E169A2BCF83C200BD352B /* DemoProjectApp.swift in Sources */,
+				53A9B2152BD0BB3C0032C3B1 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
