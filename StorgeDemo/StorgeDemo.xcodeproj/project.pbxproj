@@ -11,6 +11,8 @@
 		538BD5CA2BD5E2590098A139 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BD5C92BD5E2590098A139 /* ContentView.swift */; };
 		538BD5CC2BD5E25A0098A139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538BD5CB2BD5E25A0098A139 /* Assets.xcassets */; };
 		538BD5D02BD5E25A0098A139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538BD5CF2BD5E25A0098A139 /* Preview Assets.xcassets */; };
+		538BD5D72BD5E96D0098A139 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BD5D62BD5E96D0098A139 /* AppStorageView.swift */; };
+		538BD5D92BD5E97C0098A139 /* SceneStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BD5D82BD5E97C0098A139 /* SceneStorageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		538BD5CB2BD5E25A0098A139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538BD5CD2BD5E25A0098A139 /* StorgeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StorgeDemo.entitlements; sourceTree = "<group>"; };
 		538BD5CF2BD5E25A0098A139 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		538BD5D62BD5E96D0098A139 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
+		538BD5D82BD5E97C0098A139 /* SceneStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				538BD5C72BD5E2590098A139 /* StorgeDemoApp.swift */,
 				538BD5C92BD5E2590098A139 /* ContentView.swift */,
+				538BD5D62BD5E96D0098A139 /* AppStorageView.swift */,
+				538BD5D82BD5E97C0098A139 /* SceneStorageView.swift */,
 				538BD5CB2BD5E25A0098A139 /* Assets.xcassets */,
 				538BD5CD2BD5E25A0098A139 /* StorgeDemo.entitlements */,
 				538BD5CE2BD5E25A0098A139 /* Preview Content */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538BD5D72BD5E96D0098A139 /* AppStorageView.swift in Sources */,
 				538BD5CA2BD5E2590098A139 /* ContentView.swift in Sources */,
 				538BD5C82BD5E2590098A139 /* StorgeDemoApp.swift in Sources */,
+				538BD5D92BD5E97C0098A139 /* SceneStorageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StorgeDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = FRYR7H5LDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -306,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StorgeDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = FRYR7H5LDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
