@@ -38,6 +38,7 @@ struct ContentView: View {
                         }
                         Text(task.title)
                             .padding(4)
+                        
                         Spacer()
                         
                         if task.completed {
