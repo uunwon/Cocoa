@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct AppStorageView: View {
+    @AppStorage("mytext") private var editorText: String = "Sample Text"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextEditor(text: $editorText)
+            .padding(38)
+            .font(.largeTitle)
     }
 }
 
