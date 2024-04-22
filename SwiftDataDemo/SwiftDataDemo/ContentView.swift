@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
-class Task: Identifiable {
+@Model
+class Task {
     var id: UUID // var id = UUID() 랑 동일
     var title: String
     var completed: Bool
@@ -20,7 +22,8 @@ class Task: Identifiable {
 }
 
 struct ContentView: View {
-    @State var tasks: [Task] = []
+    @Query var tasks: [Task]
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         NavigationStack {
@@ -28,6 +31,7 @@ struct ContentView: View {
                 ForEach(tasks) { task in
                     HStack {
                         Text(task.title)
+                            .padding(4)
                         Spacer()
                         
                         if task.completed {
@@ -40,7 +44,7 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button(action: addTask) {
-                        Image(systemName: "plus")
+                        Image(systemName: "arrow.up.heart")
                     }
                     .foregroundStyle(.black)
                     
@@ -56,12 +60,12 @@ struct ContentView: View {
     
     func addTask() {
         // let newTask = Task(title: "New Task")
-        let newTask = Task(title: "🎀 Task no.\(tasks.count+1)")
-        self.tasks.append(newTask)
+        let newTask = Task(title: "🖤 Task no.\(tasks.count+1)")
+        modelContext.insert(newTask)
     }
     
     func deleteTask() {
-        self.tasks.removeLast()
+        // self.tasks.removeLast()
     }
 }
 
@@ -69,4 +73,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: Task.self) // 프리뷰에서 Model 동작하도록
 }
