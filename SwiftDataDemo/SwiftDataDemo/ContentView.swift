@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @Model
-class Task {
+class Task { // Identifiable 은 Model 에 포함되어있음
     var id: UUID // var id = UUID() 랑 동일
     var title: String
     var completed: Bool
@@ -30,6 +30,12 @@ struct ContentView: View {
             List {
                 ForEach(tasks) { task in
                     HStack {
+                        Button(action: {
+                            toggleCompletion(for: task)
+                        }) {
+                            Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
+                                .foregroundStyle(.black)
+                        }
                         Text(task.title)
                             .padding(4)
                         Spacer()
@@ -38,18 +44,20 @@ struct ContentView: View {
                             Image(systemName: "checkmark")
                         }
                     }
+                    .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            deleteTask(task)
+                        } label: {
+                        Label("Delete", systemImage: "heart.slash")
+                        }
+                    }
                 }
             }
             .navigationTitle("Tasks")
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button(action: addTask) {
-                        Image(systemName: "arrow.up.heart")
-                    }
-                    .foregroundStyle(.black)
-                    
-                    Button(action: deleteTask) {
-                        Image(systemName: "heart.slash")
+                        Image(systemName: "bolt.heart")
                     }
                     .foregroundStyle(.black)
                 }
@@ -58,14 +66,19 @@ struct ContentView: View {
         .padding(.horizontal, 5)
     }
     
-    func addTask() {
+    func addTask() { // add
         // let newTask = Task(title: "New Task")
         let newTask = Task(title: "🖤 Task no.\(tasks.count+1)")
         modelContext.insert(newTask)
     }
     
-    func deleteTask() {
+    func deleteTask(_ task: Task) { // delete
+        modelContext.delete(task)
         // self.tasks.removeLast()
+    }
+    
+    func toggleCompletion(for task: Task) { // update
+        task.completed.toggle()
     }
 }
 
