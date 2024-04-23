@@ -122,9 +122,8 @@ struct ContentView: View {
 }
 
 #Preview {
-    let container = try! ModelContainer(for: Memo.self, // 프리뷰에서 Model 작동하도록 (환경지정)
-                    configurations: ModelConfiguration(isStoredInMemoryOnly: true))
-    
-    return ContentView()
-}
+    ContentView()
+    // 메모리에서 휘발되도록 작성해줌, 왜냐면 영구 데이터여서 오류났던거야 .. 프리뷰에서는 .. 🍎
+        .modelContainer(for: Memo.self, inMemory: true)
 
+}
