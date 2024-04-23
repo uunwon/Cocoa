@@ -65,7 +65,9 @@ struct MemoAddView: View {
 }
 
 struct ContentView: View {
-    @Query var memos: [Memo]
+    // sort 와 order 사용해서 순서 시간 역순으로 뜨기
+    // @Query(sort: \Memo.created) ... 아래와 같음
+    @Query(sort: [SortDescriptor(\Memo.text, order: .reverse)]) var memos: [Memo]
     @Environment(\.modelContext) var modelContext
     @State var isSheetShowing: Bool = false
     
