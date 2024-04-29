@@ -20,10 +20,13 @@ struct ProfileView: View {
                 ProgressView()
             }
             .frame(width: 100, height: 100)
+            
             Text("User: \(authenticationViewModel.username)")
                 .foregroundStyle(.black)
+            
             Text("Email: \(authenticationViewModel.email)")
                 .foregroundStyle(.black)
+            
             Button("Logout") {
                 authenticationViewModel.logout()
             }
