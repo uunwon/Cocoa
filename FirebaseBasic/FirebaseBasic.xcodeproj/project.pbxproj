@@ -14,6 +14,7 @@
 		533B7F802BDF59E30079D7CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 533B7F7F2BDF59E30079D7CF /* FirebaseAuth */; };
 		533B7F832BDF5A250079D7CF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 533B7F822BDF5A250079D7CF /* GoogleSignIn */; };
 		533B7F852BDF5A250079D7CF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 533B7F842BDF5A250079D7CF /* GoogleSignInSwift */; };
+		533B7F882BDF6B2B0079D7CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		533B7F722BDF59AE0079D7CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		533B7F742BDF59B00079D7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533B7F772BDF59B00079D7CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		533B7F862BDF5E110079D7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,11 @@
 		533B7F6F2BDF59AE0079D7CF /* FirebaseBasic */ = {
 			isa = PBXGroup;
 			children = (
+				533B7F862BDF5E110079D7CF /* Info.plist */,
 				533B7F702BDF59AE0079D7CF /* FirebaseBasicApp.swift */,
 				533B7F722BDF59AE0079D7CF /* ContentView.swift */,
 				533B7F742BDF59B00079D7CF /* Assets.xcassets */,
+				533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */,
 				533B7F762BDF59B00079D7CF /* Preview Content */,
 			);
 			path = FirebaseBasic;
@@ -142,6 +147,7 @@
 			files = (
 				533B7F782BDF59B00079D7CF /* Preview Assets.xcassets in Resources */,
 				533B7F752BDF59B00079D7CF /* Assets.xcassets in Resources */,
+				533B7F882BDF6B2B0079D7CF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseBasic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirebaseBasic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseBasic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirebaseBasic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
