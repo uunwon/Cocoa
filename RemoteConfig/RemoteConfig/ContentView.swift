@@ -55,6 +55,7 @@ struct ContentView: View {
     private var config = RemoteConfiguration()
     @RemoteConfigProperty(key: "scrennType", fallback: nil) var screenType: String?
     
+    // 튜플 형식을 가진 computed property
     private var image: (name: String, color: Color) {
         if screenType == "screenA" {
             ("a.square", .green)
@@ -62,7 +63,7 @@ struct ContentView: View {
             ("b.square", .blue)
         } else {
             ("questionmark.square", .red)
-        } // 튜플 형식을 가진 computed property
+        }
     }
     
     var body: some View {
