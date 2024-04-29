@@ -15,6 +15,7 @@
 		533B7F832BDF5A250079D7CF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 533B7F822BDF5A250079D7CF /* GoogleSignIn */; };
 		533B7F852BDF5A250079D7CF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 533B7F842BDF5A250079D7CF /* GoogleSignInSwift */; };
 		533B7F882BDF6B2B0079D7CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */; };
+		533B7F8A2BDF752F0079D7CF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B7F892BDF752F0079D7CF /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		533B7F772BDF59B00079D7CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		533B7F862BDF5E110079D7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		533B7F892BDF752F0079D7CF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				533B7F862BDF5E110079D7CF /* Info.plist */,
 				533B7F702BDF59AE0079D7CF /* FirebaseBasicApp.swift */,
+				533B7F892BDF752F0079D7CF /* AuthenticationViewModel.swift */,
 				533B7F722BDF59AE0079D7CF /* ContentView.swift */,
 				533B7F742BDF59B00079D7CF /* Assets.xcassets */,
 				533B7F872BDF6B2B0079D7CF /* GoogleService-Info.plist */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533B7F8A2BDF752F0079D7CF /* AuthenticationViewModel.swift in Sources */,
 				533B7F732BDF59AE0079D7CF /* ContentView.swift in Sources */,
 				533B7F712BDF59AE0079D7CF /* FirebaseBasicApp.swift in Sources */,
 			);
