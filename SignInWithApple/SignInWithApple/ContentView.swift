@@ -68,6 +68,7 @@ struct ContentView: View {
         }
     }
     
+    // 사용자 정보를 내게 알려줘 - 🥷
     private func onRequest(_ request: ASAuthorizationAppleIDRequest) {
         request.requestedScopes = [.fullName, .email]
     }
@@ -81,8 +82,9 @@ struct ContentView: View {
             guard let credential = authResult.credential as? ASAuthorizationAppleIDCredential
             else { return } // guard 조건문이 false 일 때 실행
             // guard 조건문이 true 일 때 실행
-            // TODO: store Data
-            
+            storedName = credential.fullName?.givenName ?? ""
+            storedEmail = credential.email ?? ""
+            userID = credential.user
         case .failure(let error):
             print("Authorization failed: " + error.localizedDescription)
         }
