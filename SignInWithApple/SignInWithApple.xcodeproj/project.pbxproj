@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53D822582BDA1EBC00184F93 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D822572BDA1EBC00184F93 /* ToDoListApp.swift */; };
-		53D8225A2BDA1EBC00184F93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D822592BDA1EBC00184F93 /* ContentView.swift */; };
-		53D8225C2BDA1EBD00184F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D8225B2BDA1EBD00184F93 /* Assets.xcassets */; };
-		53D822602BDA1EBD00184F93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D8225F2BDA1EBD00184F93 /* Preview Assets.xcassets */; };
-		53D822872BDA2ACD00184F93 /* MemoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D822862BDA2ACD00184F93 /* MemoTask.swift */; };
+		53EFB3D72BDF1F9C00C8FEA9 /* SignInWithAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFB3D62BDF1F9C00C8FEA9 /* SignInWithAppleApp.swift */; };
+		53EFB3D92BDF1F9C00C8FEA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFB3D82BDF1F9C00C8FEA9 /* ContentView.swift */; };
+		53EFB3DB2BDF1F9D00C8FEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EFB3DA2BDF1F9D00C8FEA9 /* Assets.xcassets */; };
+		53EFB3DE2BDF1F9D00C8FEA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EFB3DD2BDF1F9D00C8FEA9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53D822542BDA1EBC00184F93 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		53D822572BDA1EBC00184F93 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		53D822592BDA1EBC00184F93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		53D8225B2BDA1EBD00184F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53D8225D2BDA1EBD00184F93 /* ToDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoList.entitlements; sourceTree = "<group>"; };
-		53D8225F2BDA1EBD00184F93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		53D822862BDA2ACD00184F93 /* MemoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTask.swift; sourceTree = "<group>"; };
+		53EFB3D32BDF1F9C00C8FEA9 /* SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EFB3D62BDF1F9C00C8FEA9 /* SignInWithAppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleApp.swift; sourceTree = "<group>"; };
+		53EFB3D82BDF1F9C00C8FEA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53EFB3DA2BDF1F9D00C8FEA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53EFB3DD2BDF1F9D00C8FEA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53EFB3E42BDF1FB600C8FEA9 /* SignInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithApple.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53D822512BDA1EBC00184F93 /* Frameworks */ = {
+		53EFB3D02BDF1F9C00C8FEA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,39 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53D8224B2BDA1EBC00184F93 = {
+		53EFB3CA2BDF1F9C00C8FEA9 = {
 			isa = PBXGroup;
 			children = (
-				53D822562BDA1EBC00184F93 /* ToDoList */,
-				53D822552BDA1EBC00184F93 /* Products */,
+				53EFB3D52BDF1F9C00C8FEA9 /* SignInWithApple */,
+				53EFB3D42BDF1F9C00C8FEA9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		53D822552BDA1EBC00184F93 /* Products */ = {
+		53EFB3D42BDF1F9C00C8FEA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53D822542BDA1EBC00184F93 /* ToDoList.app */,
+				53EFB3D32BDF1F9C00C8FEA9 /* SignInWithApple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		53D822562BDA1EBC00184F93 /* ToDoList */ = {
+		53EFB3D52BDF1F9C00C8FEA9 /* SignInWithApple */ = {
 			isa = PBXGroup;
 			children = (
-				53D822572BDA1EBC00184F93 /* ToDoListApp.swift */,
-				53D822592BDA1EBC00184F93 /* ContentView.swift */,
-				53D822862BDA2ACD00184F93 /* MemoTask.swift */,
-				53D8225B2BDA1EBD00184F93 /* Assets.xcassets */,
-				53D8225D2BDA1EBD00184F93 /* ToDoList.entitlements */,
-				53D8225E2BDA1EBD00184F93 /* Preview Content */,
+				53EFB3E42BDF1FB600C8FEA9 /* SignInWithApple.entitlements */,
+				53EFB3D62BDF1F9C00C8FEA9 /* SignInWithAppleApp.swift */,
+				53EFB3D82BDF1F9C00C8FEA9 /* ContentView.swift */,
+				53EFB3DA2BDF1F9D00C8FEA9 /* Assets.xcassets */,
+				53EFB3DC2BDF1F9D00C8FEA9 /* Preview Content */,
 			);
-			path = ToDoList;
+			path = SignInWithApple;
 			sourceTree = "<group>";
 		};
-		53D8225E2BDA1EBD00184F93 /* Preview Content */ = {
+		53EFB3DC2BDF1F9D00C8FEA9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				53D8225F2BDA1EBD00184F93 /* Preview Assets.xcassets */,
+				53EFB3DD2BDF1F9D00C8FEA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -75,39 +72,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53D822532BDA1EBC00184F93 /* ToDoList */ = {
+		53EFB3D22BDF1F9C00C8FEA9 /* SignInWithApple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53D822632BDA1EBD00184F93 /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = 53EFB3E12BDF1F9D00C8FEA9 /* Build configuration list for PBXNativeTarget "SignInWithApple" */;
 			buildPhases = (
-				53D822502BDA1EBC00184F93 /* Sources */,
-				53D822512BDA1EBC00184F93 /* Frameworks */,
-				53D822522BDA1EBC00184F93 /* Resources */,
+				53EFB3CF2BDF1F9C00C8FEA9 /* Sources */,
+				53EFB3D02BDF1F9C00C8FEA9 /* Frameworks */,
+				53EFB3D12BDF1F9C00C8FEA9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ToDoList;
-			productName = ToDoList;
-			productReference = 53D822542BDA1EBC00184F93 /* ToDoList.app */;
+			name = SignInWithApple;
+			productName = SignInWithApple;
+			productReference = 53EFB3D32BDF1F9C00C8FEA9 /* SignInWithApple.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		53D8224C2BDA1EBC00184F93 /* Project object */ = {
+		53EFB3CB2BDF1F9C00C8FEA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					53D822532BDA1EBC00184F93 = {
+					53EFB3D22BDF1F9C00C8FEA9 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 53D8224F2BDA1EBC00184F93 /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = 53EFB3CE2BDF1F9C00C8FEA9 /* Build configuration list for PBXProject "SignInWithApple" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,43 +112,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 53D8224B2BDA1EBC00184F93;
-			productRefGroup = 53D822552BDA1EBC00184F93 /* Products */;
+			mainGroup = 53EFB3CA2BDF1F9C00C8FEA9;
+			productRefGroup = 53EFB3D42BDF1F9C00C8FEA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53D822532BDA1EBC00184F93 /* ToDoList */,
+				53EFB3D22BDF1F9C00C8FEA9 /* SignInWithApple */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		53D822522BDA1EBC00184F93 /* Resources */ = {
+		53EFB3D12BDF1F9C00C8FEA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D822602BDA1EBD00184F93 /* Preview Assets.xcassets in Resources */,
-				53D8225C2BDA1EBD00184F93 /* Assets.xcassets in Resources */,
+				53EFB3DE2BDF1F9D00C8FEA9 /* Preview Assets.xcassets in Resources */,
+				53EFB3DB2BDF1F9D00C8FEA9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53D822502BDA1EBC00184F93 /* Sources */ = {
+		53EFB3CF2BDF1F9C00C8FEA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D8225A2BDA1EBC00184F93 /* ContentView.swift in Sources */,
-				53D822872BDA2ACD00184F93 /* MemoTask.swift in Sources */,
-				53D822582BDA1EBC00184F93 /* ToDoListApp.swift in Sources */,
+				53EFB3D92BDF1F9C00C8FEA9 /* ContentView.swift in Sources */,
+				53EFB3D72BDF1F9C00C8FEA9 /* SignInWithAppleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		53D822612BDA1EBD00184F93 /* Debug */ = {
+		53EFB3DF2BDF1F9D00C8FEA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -203,16 +199,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		53D822622BDA1EBD00184F93 /* Release */ = {
+		53EFB3E02BDF1F9D00C8FEA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,79 +256,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		53D822642BDA1EBD00184F93 /* Debug */ = {
+		53EFB3E22BDF1F9D00C8FEA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SignInWithApple/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.uunwon.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.uunwon.SignInWithApple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		53D822652BDA1EBD00184F93 /* Release */ = {
+		53EFB3E32BDF1F9D00C8FEA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SignInWithApple/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.uunwon.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.uunwon.SignInWithApple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,25 +327,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53D8224F2BDA1EBC00184F93 /* Build configuration list for PBXProject "ToDoList" */ = {
+		53EFB3CE2BDF1F9C00C8FEA9 /* Build configuration list for PBXProject "SignInWithApple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53D822612BDA1EBD00184F93 /* Debug */,
-				53D822622BDA1EBD00184F93 /* Release */,
+				53EFB3DF2BDF1F9D00C8FEA9 /* Debug */,
+				53EFB3E02BDF1F9D00C8FEA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53D822632BDA1EBD00184F93 /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		53EFB3E12BDF1F9D00C8FEA9 /* Build configuration list for PBXNativeTarget "SignInWithApple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53D822642BDA1EBD00184F93 /* Debug */,
-				53D822652BDA1EBD00184F93 /* Release */,
+				53EFB3E22BDF1F9D00C8FEA9 /* Debug */,
+				53EFB3E32BDF1F9D00C8FEA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 53D8224C2BDA1EBC00184F93 /* Project object */;
+	rootObject = 53EFB3CB2BDF1F9C00C8FEA9 /* Project object */;
 }

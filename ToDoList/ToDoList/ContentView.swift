@@ -6,19 +6,36 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    @Query var tasks: [MemoTask]
+    @Environment(\.modelContext) var modelContext
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(tasks, id: \.id) { task in
+                    HStack(spacing: 20) {
+                        Button(action: {
+                            task.completed.toggle()
+                        }) {
+                            Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
+                                .imageScale(.large)
+                        }
+                        Text(" Task : \(task.descriptionTask)")
+                        
+                        Spacer()
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("To do list")
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .modelContainer(for: MemoTask.self, inMemory: true)
 }
