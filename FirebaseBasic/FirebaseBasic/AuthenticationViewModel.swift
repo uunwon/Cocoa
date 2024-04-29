@@ -24,7 +24,7 @@ extension UIApplication {
 }
 
 @Observable
-final class AutenticationViewModel {
+final class AuthenticationViewModel {
     enum State {
         case busy // 중간 단계를 의미함 로그인 "중", 로그아웃 "중"
         case signedIn
