@@ -45,6 +45,11 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         return true // -> return 누르면 키보드 내려감 !! 🍎
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        updateSaveButtonState() // 엔터 안 쳐도 실시간 업로드 되도록 🍏
+        return true
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         // 🍎 Enter 치고 입력 종료할 때 실행되는 함수
         updateSaveButtonState()
@@ -57,6 +62,7 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         if(text == "\n")  { // 엔터 입력시
             textView.resignFirstResponder()
         }
+        updateSaveButtonState() // 엔터 안 쳐도 실시간 업로드 되도록 🍏
         return true // 여기는 바디 영역 엔터 치면 키보드 내려가게 🍎
     }
     
