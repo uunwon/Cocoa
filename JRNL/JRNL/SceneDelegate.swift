@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  JRNL
 //
-//  Created by uunwon on 5/9/24.
+//  Created by uunwon on 5/7/24.
 //
 
 import UIKit
