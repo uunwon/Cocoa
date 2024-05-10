@@ -56,6 +56,23 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
-    
+    // MARK: - Navigation
+
+    // 내가 entryDetail 라고 이름을 부여한 segue 가 호출될 때 나오는 함수인거야 🍏
+    // 만약 세번째 줄을 눌렀다면 세번째 줄에 있는 디테일 뷰로 ✨ "데이터를 이관시켜서 보여준다" ✨
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "entryDetail" else {
+            return // 다른 세그웨이 호출된 거면 난 몰라
+        }
+        guard let journalEntryDetailViewController = segue.destination as? JournalEntryDetailViewController,
+              let selectedJournalEntryCell = sender as? JournalListTableViewCell,
+              let indexPath = tableView.indexPath(for: selectedJournalEntryCell) else {
+            fatalError("Could not get indexPath")
+        }
+        let selectedJournalEntry = sampleJournalEntryData.journalEntries[indexPath.row]
+        journalEntryDetailViewController.selectedJournalEntry = selectedJournalEntry
+    }
 }
 

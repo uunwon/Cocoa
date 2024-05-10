@@ -13,6 +13,8 @@ class JournalEntryDetailViewController: UITableViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var bodyTextView: UITextView!
     @IBOutlet var photoImageView: UIImageView!
+    
+    var selectedJournalEntry: JournalEntry? // 데이터 저장 변수
 
     override func viewDidLoad() {
         super.viewDidLoad()
