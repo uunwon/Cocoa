@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddJournalEntryViewController: UIViewController {
+class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var bodyTextView: UITextView!
@@ -17,7 +17,8 @@ class AddJournalEntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleTextField.delegate = self // 이벤트 핸들링을 위해 작성 1
+        bodyTextView.delegate = self // 이벤트 핸들링을 위해 작성 2
         // Do any additional setup after loading the view.
     }
     
@@ -37,4 +38,18 @@ class AddJournalEntryViewController: UIViewController {
                                        body: body, photo: photo)
     }
 
+    // MARK: - UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // 키보드를 내려주는 함수
+        return true // -> return 누르면 키보드 내려감 !! 🍎
+    }
+    
+    // MARK: - UITextViewDelegate
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange,
+                  replacementText text: String) -> Bool {
+        if(text == "\n")  { // 엔터 입력시
+            textView.resignFirstResponder()
+        }
+        return true // 여기는 바디 영역 엔터 치면 키보드 내려가게 🍎
+    }
 }
