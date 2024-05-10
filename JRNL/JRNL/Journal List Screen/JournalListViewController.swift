@@ -60,6 +60,7 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
 
     // 내가 entryDetail 라고 이름을 부여한 segue 가 호출될 때 나오는 함수인거야 🍏
     // 만약 세번째 줄을 눌렀다면 세번째 줄에 있는 디테일 뷰로 ✨ "데이터를 이관시켜서 보여준다" ✨
+    // 데이터를 보내줘 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
