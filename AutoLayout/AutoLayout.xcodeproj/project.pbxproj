@@ -15,6 +15,7 @@
 		53667CF72BFAD216002D2C8E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 53667CF62BFAD216002D2C8E /* Base */; };
 		53667CFF2BFAE9D4002D2C8E /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */; };
 		53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */; };
+		53667D032BFB12FC002D2C8E /* SpacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667D022BFB12FC002D2C8E /* SpacerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		53667CF82BFAD216002D2C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		53667D022BFB12FC002D2C8E /* SpacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				53667CEE2BFAD215002D2C8E /* ViewController.swift */,
 				53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */,
 				53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */,
+				53667D022BFB12FC002D2C8E /* SpacerViewController.swift */,
 				53667CF02BFAD215002D2C8E /* Main.storyboard */,
 				53667CF32BFAD215002D2C8E /* Assets.xcassets */,
 				53667CF52BFAD216002D2C8E /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				53667CFF2BFAE9D4002D2C8E /* StackViewController.swift in Sources */,
 				53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */,
 				53667CEB2BFAD215002D2C8E /* AppDelegate.swift in Sources */,
+				53667D032BFB12FC002D2C8E /* SpacerViewController.swift in Sources */,
 				53667CED2BFAD215002D2C8E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
