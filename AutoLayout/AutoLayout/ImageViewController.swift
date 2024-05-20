@@ -54,6 +54,22 @@ class ImageViewController: UIViewController {
         imageView.frame = CGRect(x: 50, y: 50, width: 100, height: 50)
         imageView.tintColor = .purple // 강조 색
         imageView.contentMode = .scaleAspectFit // 크기 영역에 맞춰지는, 깨지지 않는
+        
+        imageView.layer.cornerRadius = imageView.frame.width / 2
+        imageView.clipsToBounds = true
+        
+        // 그림자 넣어주기 <- 이미지에 Shadow 걸림
+        imageView.layer.shadowColor = UIColor.red.cgColor
+        imageView.layer.shadowOpacity = 0.8
+        imageView.layer.shadowOffset = CGSize(width: 10, height: 10)
+        imageView.layer.shadowRadius = 6
+        
+        // border 값
+        imageView.layer.borderColor = UIColor.blue.cgColor
+        imageView.layer.borderWidth = 10
+        
+        imageView.alpha = 0.75
+        
         self.view.addSubview(imageView)
         
         let flagImageView = UIImageView(image: UIImage(systemName: "flag"))
