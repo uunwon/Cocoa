@@ -32,12 +32,12 @@ class JournalEntryDetailViewController: UITableViewController {
 /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 1 <- 원래 0 이었는데 한 세션이라서 바꿔줌
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 7
+        return 7 <- 이것도 원래 0 이었는데 테이블 셀 7개 생성해줘서 바꿔줌
     }
 */
     /*
