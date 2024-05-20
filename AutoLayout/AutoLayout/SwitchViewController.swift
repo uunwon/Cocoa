@@ -8,6 +8,11 @@
 import UIKit
 
 class SwitchViewController: UIViewController {
+    /*
+        🍏 UISwitch ✨
+        on/off 와 같은 두 가지 선택을 제공하는 UI 요소
+     */
+    
     let toggleSwitch = UISwitch()
     let label = UILabel()
 
@@ -17,8 +22,10 @@ class SwitchViewController: UIViewController {
         label.text = "Switch is OFF"
         label.textAlignment = .center
         
+        // 🍎 addTarget : 스위치 상태 변화에 반응하는 메서드 지정
         toggleSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
         
+        // 🍎 label 과 toggleSwitch 는 UIStackView 로 묶어 세로 배치
         let stackView = UIStackView(arrangedSubviews: [label, toggleSwitch])
         stackView.axis = .vertical
         stackView.spacing = 10
