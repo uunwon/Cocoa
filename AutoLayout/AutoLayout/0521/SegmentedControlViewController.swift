@@ -5,6 +5,9 @@
 //  Created by uunwon on 5/21/24.
 //
 
+// ✨ 루틴과 서브루틴 연관해서 공부해보기
+// https://velog.io/@dombe/루틴과-서브루틴
+
 import UIKit
 
 class SegmentedControlViewController: UIViewController {
