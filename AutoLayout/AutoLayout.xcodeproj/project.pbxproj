@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		534900D82BFC1D2C00DACE52 /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534900D72BFC1D2C00DACE52 /* SegmentedControlViewController.swift */; };
+		534900DA2BFC1F1400DACE52 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534900D92BFC1F1400DACE52 /* AutoLayoutViewController.swift */; };
 		53667CEB2BFAD215002D2C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667CEA2BFAD215002D2C8E /* AppDelegate.swift */; };
 		53667CED2BFAD215002D2C8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667CEC2BFAD215002D2C8E /* SceneDelegate.swift */; };
 		53667CEF2BFAD215002D2C8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667CEE2BFAD215002D2C8E /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		534900D72BFC1D2C00DACE52 /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
+		534900D92BFC1F1400DACE52 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		53667CE72BFAD215002D2C8E /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53667CEA2BFAD215002D2C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53667CEC2BFAD215002D2C8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				53667CEA2BFAD215002D2C8E /* AppDelegate.swift */,
 				53667CEC2BFAD215002D2C8E /* SceneDelegate.swift */,
 				53667CEE2BFAD215002D2C8E /* ViewController.swift */,
+				534900D92BFC1F1400DACE52 /* AutoLayoutViewController.swift */,
 				53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */,
 				53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */,
 				53667D022BFB12FC002D2C8E /* SpacerViewController.swift */,
@@ -155,6 +158,7 @@
 			files = (
 				53667CEF2BFAD215002D2C8E /* ViewController.swift in Sources */,
 				53667CFF2BFAE9D4002D2C8E /* StackViewController.swift in Sources */,
+				534900DA2BFC1F1400DACE52 /* AutoLayoutViewController.swift in Sources */,
 				53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */,
 				534900D82BFC1D2C00DACE52 /* SegmentedControlViewController.swift in Sources */,
 				53667D052BFB3C87002D2C8E /* ImageViewController.swift in Sources */,
