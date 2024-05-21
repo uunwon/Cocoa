@@ -43,9 +43,7 @@ class SegmentedControlViewController: UIViewController {
             default:
                 break
             }
-            let tintColor: UIColor = (self?.view.backgroundColor?.appropriateTintColor())!
-            let normalTextAttribute: [NSAttributedString.Key: Any] = [.foregroundColor: tintColor]
-            self?.segmentedControl.setTitleTextAttributes(normalTextAttribute, for: .normal)
+            self?.updatedColor()
         }, for: .valueChanged)
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         
@@ -54,6 +52,12 @@ class SegmentedControlViewController: UIViewController {
             segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor), // 가운데 정렬
             segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)// 세로 정렬, 상태바 아래쪽으로 20 포인트
         ])
+    }
+    
+    func updatedColor() {
+        let tintColor: UIColor = (self.view.backgroundColor?.appropriateTintColor())!
+        let normalTextAttribute: [NSAttributedString.Key: Any] = [.foregroundColor: tintColor]
+        self.segmentedControl.setTitleTextAttributes(normalTextAttribute, for: .normal)
     }
 
 }
