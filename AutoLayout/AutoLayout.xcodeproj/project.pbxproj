@@ -49,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		534900DB2BFC1FB400DACE52 /* 0520 */ = {
+			isa = PBXGroup;
+			children = (
+				534900D92BFC1F1400DACE52 /* AutoLayoutViewController.swift */,
+				53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */,
+				53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */,
+				53667D022BFB12FC002D2C8E /* SpacerViewController.swift */,
+				53667D042BFB3C87002D2C8E /* ImageViewController.swift */,
+			);
+			path = 0520;
+			sourceTree = "<group>";
+		};
+		534900DC2BFC1FC700DACE52 /* 0521 */ = {
+			isa = PBXGroup;
+			children = (
+				534900D72BFC1D2C00DACE52 /* SegmentedControlViewController.swift */,
+			);
+			path = 0521;
+			sourceTree = "<group>";
+		};
 		53667CDE2BFAD215002D2C8E = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +91,8 @@
 				53667CEA2BFAD215002D2C8E /* AppDelegate.swift */,
 				53667CEC2BFAD215002D2C8E /* SceneDelegate.swift */,
 				53667CEE2BFAD215002D2C8E /* ViewController.swift */,
-				534900D92BFC1F1400DACE52 /* AutoLayoutViewController.swift */,
-				53667CFE2BFAE9D4002D2C8E /* StackViewController.swift */,
-				53667D002BFAF0D4002D2C8E /* SwitchViewController.swift */,
-				53667D022BFB12FC002D2C8E /* SpacerViewController.swift */,
-				53667D042BFB3C87002D2C8E /* ImageViewController.swift */,
-				534900D72BFC1D2C00DACE52 /* SegmentedControlViewController.swift */,
+				534900DB2BFC1FB400DACE52 /* 0520 */,
+				534900DC2BFC1FC700DACE52 /* 0521 */,
 				53667CF02BFAD215002D2C8E /* Main.storyboard */,
 				53667CF32BFAD215002D2C8E /* Assets.xcassets */,
 				53667CF52BFAD216002D2C8E /* LaunchScreen.storyboard */,
