@@ -8,6 +8,7 @@
 import UIKit
 
 // ✨ delegate 에 관하여 https://velog.io/@chagmn/Swift-Delegate
+// ✨우 weak self vs unowned https://yudonlee.tistory.com/36
 class DatePickerViewController: UIViewController {
     let datePicker = {
         let picker = UIDatePicker()
