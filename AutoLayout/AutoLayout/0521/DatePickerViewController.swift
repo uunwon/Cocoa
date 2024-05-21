@@ -26,6 +26,16 @@ class DatePickerViewController: UIViewController {
         datePicker.minimumDate = today
         datePicker.maximumDate = oneYearFromNow
         
+        /*
+           // 🍎 1년 전으로 돌아갈 수 있음 - 과거 체크 !
+         
+            dateComponents.year = -1
+            let oneYearAgo = Calendar.current.date(byAdding: dateComponents, to: today) // 오늘로부터 일년을 더한 캘린더를 리턴하는 값
+            
+            datePicker.minimumDate = oneYearAgo
+            datePicker.maximumDate = today
+         */
+        
         datePicker.addAction(UIAction { [weak self] _ in
             print("sender: \(self?.datePicker.date.formatted() ?? "N/A")") // Not Acceptable
         }, for: .valueChanged) // valueChanged : 스크롤해서 바뀔 때마다 변경
