@@ -7,6 +7,7 @@
 
 import UIKit
 
+// ✨ 알람 받기 (카톡, 왓츠앱) https://co-dong.tistory.com/76
 class AlertViewController: UIViewController {
 
     override func viewDidLoad() {
