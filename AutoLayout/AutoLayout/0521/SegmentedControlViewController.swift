@@ -30,6 +30,7 @@ class SegmentedControlViewController: UIViewController {
         
         // 🍎 버튼이 더 독립적으로 운영되도록 추상적으로 config 로 이렇게 분리해서 애플이 만들어두는 거야
         // 버튼에 직접 위처럼 변경하지 않구 !!
+        // config 객체는 재사용이 가능하다 (config 는 구조체임, 그래서 값 복사임 참조가 아니라)
         var config = UIButton.Configuration.filled()
         config.cornerStyle = .dynamic
         button.layer.cornerRadius = 10
