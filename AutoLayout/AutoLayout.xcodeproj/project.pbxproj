@@ -24,7 +24,7 @@
 		53667D032BFB12FC002D2C8E /* SpacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667D022BFB12FC002D2C8E /* SpacerViewController.swift */; };
 		53667D052BFB3C87002D2C8E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667D042BFB3C87002D2C8E /* ImageViewController.swift */; };
 		539DA0562BFC787E0026F2D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DA0552BFC787E0026F2D8 /* WebViewController.swift */; };
-		539E934C2BFC84A9006D34EC /* alertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E934B2BFC84A9006D34EC /* alertViewController.swift */; };
+		539E934C2BFC84A9006D34EC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E934B2BFC84A9006D34EC /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		53667D022BFB12FC002D2C8E /* SpacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerViewController.swift; sourceTree = "<group>"; };
 		53667D042BFB3C87002D2C8E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		539DA0552BFC787E0026F2D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		539E934B2BFC84A9006D34EC /* alertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertViewController.swift; sourceTree = "<group>"; };
+		539E934B2BFC84A9006D34EC /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				534900E12BFC549C00DACE52 /* PickerViewController.swift */,
 				534900E32BFC5C5400DACE52 /* DatePickerViewController.swift */,
 				539DA0552BFC787E0026F2D8 /* WebViewController.swift */,
-				539E934B2BFC84A9006D34EC /* alertViewController.swift */,
+				539E934B2BFC84A9006D34EC /* AlertViewController.swift */,
 			);
 			path = 0521;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 				53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */,
 				534900E22BFC549C00DACE52 /* PickerViewController.swift in Sources */,
 				534900D82BFC1D2C00DACE52 /* UIButtonViewController.swift in Sources */,
-				539E934C2BFC84A9006D34EC /* alertViewController.swift in Sources */,
+				539E934C2BFC84A9006D34EC /* AlertViewController.swift in Sources */,
 				53667D052BFB3C87002D2C8E /* ImageViewController.swift in Sources */,
 				53667CEB2BFAD215002D2C8E /* AppDelegate.swift in Sources */,
 				539DA0562BFC787E0026F2D8 /* WebViewController.swift in Sources */,
