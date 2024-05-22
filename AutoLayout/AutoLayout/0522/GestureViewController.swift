@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GestureViewController: UIViewController {
+class GestureViewController: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,13 @@ class GestureViewController: UIViewController {
         
         let imageView = UIImageView(image: UIImage(systemName: "water.waves"))
         imageView.frame = CGRect(x:100, y: 410, width: 175, height: 125)
+        imageView.tintColor = .banana
         imageView.isUserInteractionEnabled = true
         
         let imageView2 = UIImageView(image: UIImage(systemName: "fleuron"))
         // bounds 는 실측 사이즈 (화면에서 나타나는 나의 크기)
         imageView2.frame = CGRect(x: view.bounds.midX - 70, y: view.bounds.midY + 140, width: 125, height: 125)
-        imageView2.tintColor = .lightMint
+        imageView2.tintColor = .banana
         imageView2.isUserInteractionEnabled = true
         
         view.addSubview(rectangle)
@@ -54,6 +55,27 @@ class GestureViewController: UIViewController {
         /* Rotation */
         let rotationGesture = UIRotationGestureRecognizer(target: self, action: #selector(rotationGesture))
         imageView2.addGestureRecognizer(rotationGesture)
+        
+        /* Pan, 다중 Gesture */
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGesture))
+        imageView2.addGestureRecognizer(panGesture)
+        
+        rotationGesture.delegate = self
+        panGesture.delegate = self
+    }
+    
+    // UIGestureRecognizerDelegate 넣으면서 추가하는 함수 . . 단일 제스처 허용 여부
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if gestureRecognizer is UIPanGestureRecognizer {
+            return true
+        } else {
+            return true
+        }
+    }
+    
+    // 복합 제스처 허용 여부
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -94,6 +116,14 @@ class GestureViewController: UIViewController {
         if let view = sender.view {
             view.transform = view.transform.rotated(by: sender.rotation)
             sender.rotation = 0
+        }
+    }
+    
+    @objc func panGesture(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: view)
+        if let view = sender.view {
+            view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+            sender.setTranslation(.zero, in: view) // 아까 스케일 0으로 만든 것과 유사하게 다시 원위치로 . .
         }
     }
     
