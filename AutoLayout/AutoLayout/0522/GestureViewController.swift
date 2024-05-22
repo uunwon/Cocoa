@@ -58,8 +58,24 @@ class GestureViewController: UIViewController {
     }
     
     @objc func pinchGesture(_ sender: UIPinchGestureRecognizer) {
-        if let view = sender.view {
-            view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale) // transform 은 뷰를 변형시키는- 그래피컬한 이펙트 들어감
+        guard let view = sender.view else { return }
+        /*
+         행렬과 매트리스
+         그래픽스 행렬 연산 구몬 수학 . by 도율 🍏
+         | a  b  0 |
+         | c  d  0 |
+         | tx ty 1 |
+         */
+        let currentScale = sqrt(view.transform.a * view.transform.a + view.transform.c * view.transform.c)
+        if sender.scale < 1.0 { // 최소값
+            if currentScale > 0.8 {
+                // transform 은 뷰를 변형시키는- 그래피컬한 이펙트 들어감
+                view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale)
+            }
+        } else {
+            if currentScale < 1.2 { // 최댓값
+                view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale)
+            }
         }
     }
     
