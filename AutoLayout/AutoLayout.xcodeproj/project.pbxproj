@@ -25,6 +25,7 @@
 		53667D052BFB3C87002D2C8E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53667D042BFB3C87002D2C8E /* ImageViewController.swift */; };
 		539DA0562BFC787E0026F2D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DA0552BFC787E0026F2D8 /* WebViewController.swift */; };
 		539E934C2BFC84A9006D34EC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E934B2BFC84A9006D34EC /* AlertViewController.swift */; };
+		53D4F2942BFD70B900205403 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D4F2932BFD70B900205403 /* GestureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		53667D042BFB3C87002D2C8E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		539DA0552BFC787E0026F2D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		539E934B2BFC84A9006D34EC /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		53D4F2932BFD70B900205403 /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +113,21 @@
 				53667CEE2BFAD215002D2C8E /* ViewController.swift */,
 				534900DB2BFC1FB400DACE52 /* 0520 */,
 				534900DC2BFC1FC700DACE52 /* 0521 */,
+				53D4F2922BFD6F2F00205403 /* 0522 */,
 				53667CF02BFAD215002D2C8E /* Main.storyboard */,
 				53667CF32BFAD215002D2C8E /* Assets.xcassets */,
 				53667CF52BFAD216002D2C8E /* LaunchScreen.storyboard */,
 				53667CF82BFAD216002D2C8E /* Info.plist */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		53D4F2922BFD6F2F00205403 /* 0522 */ = {
+			isa = PBXGroup;
+			children = (
+				53D4F2932BFD70B900205403 /* GestureViewController.swift */,
+			);
+			path = 0522;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				534900E42BFC5C5400DACE52 /* DatePickerViewController.swift in Sources */,
 				53667CFF2BFAE9D4002D2C8E /* StackViewController.swift in Sources */,
 				534900E02BFC39EF00DACE52 /* TextInputViewController.swift in Sources */,
+				53D4F2942BFD70B900205403 /* GestureViewController.swift in Sources */,
 				534900DA2BFC1F1400DACE52 /* AutoLayoutViewController.swift in Sources */,
 				534900DE2BFC2C0D00DACE52 /* SegmentedControlViewController.swift in Sources */,
 				53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */,
