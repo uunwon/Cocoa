@@ -31,6 +31,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         // 생성자 함수 내에서 테이블 스타일 변경 가능
         let tableView = UITableView(frame: view.bounds, style: .insetGrouped) // 화면에 꽉 채우겠다 이거임
         tableView.dataSource = self // 애플 개발자들아 네가 만든 테이블 내가 완성할게 ~ 이런 의미
+        tableView.delegate = self // event 동작을 위해
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell") // 재사용 가능한 셀을 등록함
         view.addSubview(tableView)
     }
@@ -50,11 +51,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    // TableView 각 셀 클릭 이벤트 처리 함수
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        print("Click number \(indexPath.row)")
-    } */
+     */
     
     /* TableView with section */
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,5 +73,11 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.contentConfiguration = config
         
         return cell
+    }
+    
+    // TableView 각 셀 클릭 이벤트 처리 함수
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("\(categories[indexPath.section].animals[indexPath.row].name)")
     }
 }
