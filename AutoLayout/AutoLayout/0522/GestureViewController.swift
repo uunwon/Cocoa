@@ -19,11 +19,16 @@ class GestureViewController: UIViewController {
         
         let rectangle2 = UIView()
         rectangle2.backgroundColor = .banana
-        rectangle2.frame = CGRect(x: 100 , y: 300, width: 175, height: 125)
+        rectangle2.frame = CGRect(x: 100 , y: 250, width: 175, height: 125)
         rectangle2.isUserInteractionEnabled = true
+        
+        let imageView = UIImageView(image: UIImage(systemName: "water.waves"))
+        imageView.frame = CGRect(x:100, y: 400, width: 175, height: 125)
+        imageView.isUserInteractionEnabled = true
         
         view.addSubview(rectangle)
         view.addSubview(rectangle2)
+        view.addSubview(imageView)
         
         /* TAP */
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
@@ -34,6 +39,10 @@ class GestureViewController: UIViewController {
         let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(longGesture))
         longGesture.minimumPressDuration = 2.0 // 길게 눌리는 시간
         rectangle2.addGestureRecognizer(longGesture)
+        
+        /* Pinch */
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchGesture))
+        imageView.addGestureRecognizer(pinchGesture)
     }
     
     @objc func tapGesture(_ sender: UITapGestureRecognizer) {
@@ -45,6 +54,12 @@ class GestureViewController: UIViewController {
     @objc func longGesture(_ sender: UITapGestureRecognizer) {
         if let view = sender.view, sender.state == .began {
             view.backgroundColor = (view.backgroundColor == .banana) ? .lightSalmon : .banana
+        }
+    }
+    
+    @objc func pinchGesture(_ sender: UIPinchGestureRecognizer) {
+        if let view = sender.view {
+            view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale) // transform 은 뷰를 변형시키는- 그래피컬한 이펙트 들어감
         }
     }
     
