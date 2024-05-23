@@ -26,6 +26,7 @@
 		539DA0562BFC787E0026F2D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DA0552BFC787E0026F2D8 /* WebViewController.swift */; };
 		539E934C2BFC84A9006D34EC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E934B2BFC84A9006D34EC /* AlertViewController.swift */; };
 		53BF34B62BFEC34400ECD01C /* TableImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF34B52BFEC34400ECD01C /* TableImageViewController.swift */; };
+		53BF34B82BFED16200ECD01C /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF34B72BFED16200ECD01C /* FormViewController.swift */; };
 		53D4F2942BFD70B900205403 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D4F2932BFD70B900205403 /* GestureViewController.swift */; };
 		53D4F2962BFD8F5A00205403 /* ContextMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D4F2952BFD8F5A00205403 /* ContextMenuViewController.swift */; };
 		53D4F2982BFDA70400205403 /* CustomDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D4F2972BFDA70400205403 /* CustomDatePickerViewController.swift */; };
@@ -54,6 +55,7 @@
 		539DA0552BFC787E0026F2D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		539E934B2BFC84A9006D34EC /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		53BF34B52BFEC34400ECD01C /* TableImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableImageViewController.swift; sourceTree = "<group>"; };
+		53BF34B72BFED16200ECD01C /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		53D4F2932BFD70B900205403 /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		53D4F2952BFD8F5A00205403 /* ContextMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuViewController.swift; sourceTree = "<group>"; };
 		53D4F2972BFDA70400205403 /* CustomDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				53BF34B52BFEC34400ECD01C /* TableImageViewController.swift */,
+				53BF34B72BFED16200ECD01C /* FormViewController.swift */,
 			);
 			path = 0523;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				534900DE2BFC2C0D00DACE52 /* SegmentedControlViewController.swift in Sources */,
 				53667D012BFAF0D4002D2C8E /* SwitchViewController.swift in Sources */,
 				534900E22BFC549C00DACE52 /* PickerViewController.swift in Sources */,
+				53BF34B82BFED16200ECD01C /* FormViewController.swift in Sources */,
 				534900D82BFC1D2C00DACE52 /* UIButtonViewController.swift in Sources */,
 				539E934C2BFC84A9006D34EC /* AlertViewController.swift in Sources */,
 				53BF34B62BFEC34400ECD01C /* TableImageViewController.swift in Sources */,
