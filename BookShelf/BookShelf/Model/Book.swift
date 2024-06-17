@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Book: Identifiable {
-    var id: String { return isbn }
+struct Book: Hashable, Identifiable {
+    var id = UUID()
     var title: String
     var author: String
     var isbn: String
     var pages: Int
+    var isRead: Bool = false
 }
 
 extension Book {
@@ -22,7 +23,7 @@ extension Book {
 }
 
 extension Book {
-    static let sampleBooks = [
+    static let samples = [
         Book(title: "Changer", author: "Matt Gemmell", isbn: "9781916265202", pages: 476),
         Book(title: "SwiftUI for Absolute Beginners", author: "Jayant Varma", isbn: "9781484255155", pages: 200),
         Book(title: "Asynchronous Programming with SwiftUI and Combine", author: "Peter Friese", isbn: "9781484285718", pages: 367),
