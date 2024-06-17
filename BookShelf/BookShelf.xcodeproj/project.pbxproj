@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		534B36C82C1FEFC70021001E /* StateManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B36C72C1FEFC70021001E /* StateManagementView.swift */; };
+		534B36CA2C1FF23D0021001E /* StateManagementView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B36C92C1FF23D0021001E /* StateManagementView2.swift */; };
 		537E40BF2C1FC5E100E14532 /* BookShelfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E40BE2C1FC5E100E14532 /* BookShelfApp.swift */; };
 		537E40C12C1FC5E100E14532 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E40C02C1FC5E100E14532 /* BookListView.swift */; };
 		537E40C32C1FC5E200E14532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537E40C22C1FC5E200E14532 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		534B36C72C1FEFC70021001E /* StateManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagementView.swift; sourceTree = "<group>"; };
+		534B36C92C1FF23D0021001E /* StateManagementView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagementView2.swift; sourceTree = "<group>"; };
 		537E40BB2C1FC5E100E14532 /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537E40BE2C1FC5E100E14532 /* BookShelfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfApp.swift; sourceTree = "<group>"; };
 		537E40C02C1FC5E100E14532 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				537E40C22C1FC5E200E14532 /* Assets.xcassets */,
 				537E40C42C1FC5E200E14532 /* Preview Content */,
 				534B36C72C1FEFC70021001E /* StateManagementView.swift */,
+				534B36C92C1FF23D0021001E /* StateManagementView2.swift */,
 			);
 			path = BookShelf;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				537E40BF2C1FC5E100E14532 /* BookShelfApp.swift in Sources */,
 				534B36C82C1FEFC70021001E /* StateManagementView.swift in Sources */,
 				539839892C1FD28A0041C156 /* BookRowView.swift in Sources */,
+				534B36CA2C1FF23D0021001E /* StateManagementView2.swift in Sources */,
 				537E40CE2C1FC62600E14532 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

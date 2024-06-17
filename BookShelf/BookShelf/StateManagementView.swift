@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct StateManagementView: View { // ParentView
-    // @State 는 뷰가 소유한 값에 사용
+    // 🌵 @State 는 뷰가 소유한 값에 사용
     @State var favouriteNumber: Int = 42 // 상태 관리는 parentView
     
     var body: some View {
@@ -22,7 +22,7 @@ struct StateManagementView: View { // ParentView
 }
 
 struct ChildView: View { // ChildView
-    // @Binding 은 뷰 외부에서 소유한 값에 대한 참조
+    // 🌵 @Binding 은 뷰 외부에서 소유한 값에 대한 참조
     @Binding var number: Int // Childview 에서는 그 수를 계속 올려주고 . .
     
     var body: some View {
