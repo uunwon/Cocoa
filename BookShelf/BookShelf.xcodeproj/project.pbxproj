@@ -11,6 +11,7 @@
 		537E40C12C1FC5E100E14532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E40C02C1FC5E100E14532 /* ContentView.swift */; };
 		537E40C32C1FC5E200E14532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537E40C22C1FC5E200E14532 /* Assets.xcassets */; };
 		537E40C62C1FC5E200E14532 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537E40C52C1FC5E200E14532 /* Preview Assets.xcassets */; };
+		537E40CE2C1FC62600E14532 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E40CD2C1FC62600E14532 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		537E40C02C1FC5E100E14532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		537E40C22C1FC5E200E14532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537E40C52C1FC5E200E14532 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		537E40CD2C1FC62600E14532 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		537E40BD2C1FC5E100E14532 /* BookShelf */ = {
 			isa = PBXGroup;
 			children = (
+				537E40CC2C1FC61C00E14532 /* Model */,
 				537E40BE2C1FC5E100E14532 /* BookShelfApp.swift */,
 				537E40C02C1FC5E100E14532 /* ContentView.swift */,
 				537E40C22C1FC5E200E14532 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				537E40C52C1FC5E200E14532 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		537E40CC2C1FC61C00E14532 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				537E40CD2C1FC62600E14532 /* Book.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				537E40C12C1FC5E100E14532 /* ContentView.swift in Sources */,
 				537E40BF2C1FC5E100E14532 /* BookShelfApp.swift in Sources */,
+				537E40CE2C1FC62600E14532 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
