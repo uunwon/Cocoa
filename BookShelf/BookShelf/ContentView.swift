@@ -8,24 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    var books: [Book] = Book.sampleBooks
+    
     var body: some View {
-        HStack(alignment: .top) {
-            Image("9781484285718-M")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 90)
-            VStack(alignment: .leading) {
-                Text("Asynchronous Programming with SwiftUI and Combine")
-                    .font(.headline)
-                Text("by Peter Friess")
-                    .font(.subheadline)
-                Text("451 pages")
-                    .font(.subheadline)
+        List(books, id: \.title) { book in
+            HStack(alignment: .top) {
+                Image(book.mediumCoverImageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 90)
+                VStack(alignment: .leading) {
+                    Text(book.title)
+                        .font(.headline)
+                    Text("by \(book.author)")
+                        .font(.subheadline)
+                    Text("\(book.pages) pages")
+                        .font(.subheadline)
+                }
+                Spacer()
             }
         }
+        .listStyle(.plain) // 라운딩되어있다가 플랫하게 펴짐 !
     }
 }
 
 #Preview {
     ContentView()
 }
+
+// 사이즈 딱 맞게 프리뷰 화면 보여주는 법 ✨
+//#Preview(traits: .sizeThatFitsLayout) {
+//    ContentView()
+//}
