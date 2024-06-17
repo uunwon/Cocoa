@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Book {
+struct Book: Identifiable {
+    var id: String { return isbn }
     var title: String
     var author: String
     var isbn: String

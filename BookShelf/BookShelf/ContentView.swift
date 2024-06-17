@@ -11,7 +11,7 @@ struct ContentView: View {
     var books: [Book] = Book.sampleBooks
     
     var body: some View {
-        List(books, id: \.title) { book in
+        List(books) { book in
             HStack(alignment: .top) {
                 Image(book.mediumCoverImageName)
                     .resizable()
